@@ -36,7 +36,7 @@
 
 ## 🏆 GitHub Trophies
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=soft&no-bg=true&no-frame=true&margin-w=15&margin-h=15&title=Achievements,Progress&hide_border=true" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=soft&no-bg=true&no-frame=true&margin-w=15&margin-h=15&column=7&title=Achievements,Progress&hide_points=true" alt="GitHub Trophies" />
 </p>
 
 ---

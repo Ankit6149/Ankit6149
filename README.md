@@ -36,17 +36,18 @@
 
 ## 📫 Let's Connect:
 
-<p align="left">
+<div align="left">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://unpkg.com/heroicons@1.0.6/outline/mail.svg" alt="Email" width="40px">
+    <img src="https://unpkg.com/heroicons@1.0.6/outline/mail.svg" alt="Email" width="40px" style="fill: white;">
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://unpkg.com/heroicons@1.0.6/outline/linkedin.svg" alt="LinkedIn" width="40px">
+    <img src="https://unpkg.com/heroicons@1.0.6/outline/linkedin.svg" alt="LinkedIn" width="40px" style="fill: white;">
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://unpkg.com/heroicons@1.0.6/outline/instagram.svg" alt="Instagram" width="40px">
+    <img src="https://unpkg.com/heroicons@1.0.6/outline/instagram.svg" alt="Instagram" width="40px" style="fill: white;">
   </a>
-</p>
+</div>
+
 
 
 ---

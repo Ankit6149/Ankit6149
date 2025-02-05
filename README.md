@@ -35,9 +35,9 @@
 ---
 
 ## 🏆 GitHub Trophies
-<p align="center">
+<div style="background-color: #333; padding: 20px; margin: 30px 0; border-radius: 10px; text-align: center;">
   <img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=soft&no-bg=true&no-frame=true&margin-w=15&margin-h=15&column=7&exclude_0pts=true&text_color=ffffff" alt="GitHub Trophies" />
-</p>
+</div>
 
 ---
 

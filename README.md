@@ -1,6 +1,6 @@
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <h1>Hi there, I'm Ankit! 👋👨‍💻</h1>
-  <div style="text-align: right;">
+<div style="position: relative;">
+  <h1 style="display: inline-block;">Hi there, I'm Ankit! 👋👨‍💻</h1>
+  <div style="position: absolute; right: 0; top: 0;">
     <a href="mailto:ankitbhardwaj80100@gmail.com">
       <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="45px">
     </a>

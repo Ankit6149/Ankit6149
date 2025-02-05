@@ -37,13 +37,13 @@
 ## 📫 Let's Connect:
 <p align="left">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="45px">
+    <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="60px">
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="45px">
+    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="60px">
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" width="45px">
+    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" width="60px">
   </a>
 </p>
 

@@ -18,8 +18,11 @@
 
 ---
 
-## 🚀 My GitHub Stats:
-![Ankit's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&count_private=true&hide_title=true&hide=prs&theme=radical)
+## 📊 GitHub Stats & Languages Used:
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&theme=radical&langs_count=10" alt="Top Languages" width="48%" />
+</div>
 
 ---
 
@@ -33,11 +36,6 @@
 
 ## 🏆 GitHub Trophies:
 ![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=juicyfresh)
-
----
-
-## 🧑‍💻 Languages Used:
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&theme=radical&langs_count=10)
 
 ---
 

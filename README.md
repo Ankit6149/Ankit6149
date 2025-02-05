@@ -1,15 +1,15 @@
 # Hi there, I'm Ankit! 👋👨‍💻
 
-<div style="text-align: right;">
-  <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="45px">
-  </a>
-  <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="45px">
-  </a>
-  <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" width="45px">
-  </a>
+<div style="position: absolute; right: 0; top: 0;">
+    <a href="mailto:ankitbhardwaj80100@gmail.com" style="text-decoration: none;">
+      <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="45px">
+    </a>
+    <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/" style="text-decoration: none;">
+      <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="45px">
+    </a>
+    <a href="https://www.instagram.com/ankit.bh_/" style="text-decoration: none;">
+      <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" width="45px">
+    </a>
 </div>
 
 **Engineering undergraduate** at **Netaji Subhas University of Technology** in New Delhi, India. Graduating in 2025. I love exploring **Machine Learning**, **Artificial Intelligence**, and **Web Development**. I enjoy building **innovative projects** that solve real-world problems! 🌍✨

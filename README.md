@@ -1,6 +1,3 @@
-<head>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-</head>
 # Hi there, I'm Ankit! 👋👨‍💻
 
 **Engineering undergraduate** at **Netaji Subhas University of Technology** in New Delhi, India. Graduating in 2025. I love exploring **Machine Learning**, **Artificial Intelligence**, and **Web Development**. I enjoy building **innovative projects** that solve real-world problems! 🌍✨
@@ -39,7 +36,10 @@
 
 ## 📫 Let's Connect:
 
-<div align="right">
+<div>
+  <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
   <a href="mailto:ankitbhardwaj80100@gmail.com">
     <i class="fa fa-envelope" style="font-size: 50px; color: white; margin-right: 20px;"></i>
   </a>

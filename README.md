@@ -35,21 +35,22 @@
 ---
 
 ## 🏆 GitHub Trophies  
-<img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=soft&no-bg=true&no-frame=true&margin-w=10&margin-h=10&rank=-C,-B,-A" alt="GitHub Trophies" />
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=soft&no-bg=true&no-frame=true&margin-w=15&margin-h=15&rank=-C,-B,-A" alt="GitHub Trophies" />
+</p>
 
 ---
 
 ## 📫 Let's Connect:
-
 <p align="left">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://github.com/Ankit6149/Ankit6149/blob/main/icons/gmail.png" alt="Email" width="40px">
+    <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="45px">
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://github.com/Ankit6149/Ankit6149/blob/main/icons/linkedin.png" alt="LinkedIn" width="40px">
+    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="45px">
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://github.com/Ankit6149/Ankit6149/blob/main/icons/instagram.png" alt="Instagram" width="40px">
+    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" width="45px">
   </a>
 </p>
 

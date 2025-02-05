@@ -1,3 +1,6 @@
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
 # Hi there, I'm Ankit! 👋👨‍💻
 
 **Engineering undergraduate** at **Netaji Subhas University of Technology** in New Delhi, India. Graduating in 2025. I love exploring **Machine Learning**, **Artificial Intelligence**, and **Web Development**. I enjoy building **innovative projects** that solve real-world problems! 🌍✨
@@ -36,19 +39,17 @@
 
 ## 📫 Let's Connect:
 
-<div align="left">
+<div align="right">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://unpkg.com/heroicons@1.0.6/outline/mail.svg" alt="Email" width="40px" style="fill: white;">
+    <i class="fa fa-envelope" style="font-size: 50px; color: white; margin-right: 20px;"></i>
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://unpkg.com/heroicons@1.0.6/outline/linkedin.svg" alt="LinkedIn" width="40px" style="fill: white;">
+    <i class="fa fa-linkedin" style="font-size: 50px; color: white; margin-right: 20px;"></i>
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://unpkg.com/heroicons@1.0.6/outline/instagram.svg" alt="Instagram" width="40px" style="fill: white;">
+    <i class="fa fa-instagram" style="font-size: 50px; color: white;"></i>
   </a>
 </div>
-
-
 
 ---
 

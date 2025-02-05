@@ -34,8 +34,8 @@
 
 ---
 
-## 🏆 GitHub Trophies
-<img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=soft&no-bg=true&no-frame=true&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+## 🏆 GitHub Trophies  
+<img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=soft&no-bg=true&no-frame=true&margin-w=10&margin-h=10&rank=-C,-B,-A" alt="GitHub Trophies" />
 
 ---
 
@@ -43,13 +43,13 @@
 
 <p align="left">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://github.com/Ankit6149/Ankit6149/blob/main/icons/gmail.png" alt="Email" width="40px">
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    <img src="https://github.com/Ankit6149/Ankit6149/blob/main/icons/linkedin.png" alt="LinkedIn" width="40px">
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+    <img src="https://github.com/Ankit6149/Ankit6149/blob/main/icons/instagram.png" alt="Instagram" width="40px">
   </a>
 </p>
 

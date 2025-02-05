@@ -49,10 +49,8 @@
 
 ---
 
-## 🏆 GitHub Trophies
-<div style="background-color: #282828; padding: 20px; margin: 30px 0; border-radius: 10px; text-align: center;">
-  <img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=dark_dimmed&no-bg=true&no-frame=true&margin-w=15&margin-h=15&column=7&exclude_0pts=true&skip=0&text_color=ffffff" alt="GitHub Trophies" />
-</div>
+## 🔥 My GitHub Streak:
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&hide_border=true&theme=radical)
 
 ---
 

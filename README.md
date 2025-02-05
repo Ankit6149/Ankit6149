@@ -36,18 +36,21 @@
 
 ## 📫 Let's Connect:
 
-<div>
-  <head>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-</head>
+<div align="right">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <i class="fa fa-envelope" style="font-size: 50px; color: white; margin-right: 20px;"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7 7 7-7" />
+    </svg>
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <i class="fa fa-linkedin" style="font-size: 50px; color: white; margin-right: 20px;"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c-2.5 0-5 1.5-5 5v6h2v-6c0-1.5 1.5-2 3-2s3 .5 3 2v6h2v-6c0-3.5-2.5-5-5-5zM5 8h2v12H5V8z" />
+    </svg>
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <i class="fa fa-instagram" style="font-size: 50px; color: white;"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.38 5.62a9 9 0 11-12.76 12.76 9 9 0 0112.76-12.76zM13.5 9h-3v6h3V9zM9.5 9h-3v6h3V9z" />
+    </svg>
   </a>
 </div>
 

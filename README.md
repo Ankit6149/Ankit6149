@@ -38,13 +38,13 @@
 
 <div align="right">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://img.icons8.com/ios/50/ffffff/gmail.png" alt="Email" width="40px">
+    <img src="https://img.icons8.com/ios/50/000000/gmail.png" alt="Email" width="40px">
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://img.icons8.com/ios/50/ffffff/linkedin.png" alt="LinkedIn" width="40px">
+    <img src="https://img.icons8.com/ios/50/000000/linkedin.png" alt="LinkedIn" width="40px">
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://img.icons8.com/ios/50/ffffff/instagram-new.png" alt="Instagram" width="40px">
+    <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram" width="40px">
   </a>
 </div>
 

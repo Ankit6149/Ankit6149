@@ -38,19 +38,13 @@
 
 <div align="right">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7 7 7-7" />
-    </svg>
+    <img src="https://img.icons8.com/ios/50/ffffff/gmail.png" alt="Email" width="40px">
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c-2.5 0-5 1.5-5 5v6h2v-6c0-1.5 1.5-2 3-2s3 .5 3 2v6h2v-6c0-3.5-2.5-5-5-5zM5 8h2v12H5V8z" />
-    </svg>
+    <img src="https://img.icons8.com/ios/50/ffffff/linkedin.png" alt="LinkedIn" width="40px">
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.38 5.62a9 9 0 11-12.76 12.76 9 9 0 0112.76-12.76zM13.5 9h-3v6h3V9zM9.5 9h-3v6h3V9z" />
-    </svg>
+    <img src="https://img.icons8.com/ios/50/ffffff/instagram-new.png" alt="Instagram" width="40px">
   </a>
 </div>
 

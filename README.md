@@ -35,22 +35,17 @@
 ---
 
 ## 📫 Let's Connect:
-<p align="left">
+<div style="display: flex; justify-content: flex-start; gap: 20px;">
   <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="60px">
+    <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="60px" />
   </a>
   <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="60px">
+    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="60px" />
   </a>
   <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" width="60px">
+    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" width="60px" />
   </a>
-</p>
-
----
-
-## 🔥 My GitHub Streak:
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&hide_border=true&theme=radical)
+</div>
 
 ---
 

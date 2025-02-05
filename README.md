@@ -36,14 +36,14 @@
 
 ---
 
-## 📈 Top Languages:
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical)
+## 🧑‍💻 Languages Used:
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&theme=radical&langs_count=10)
 
 ---
 
 ## 📫 Let's Connect:
-- 📧 **Email**: [ankitbhardwaj80100@gmail.com](mailto:ankitbhardwaj80100@gmail.com)
-- 💼 **LinkedIn**: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ankit%20Bhardwaj-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/)
+- 📧 **Email**: [ankitbhardwaj80100@gmail.com](mailto:ankitbhardwaj80100@gmail.com)  
+- 💼 **LinkedIn**: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ankit%20Bhardwaj-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/)  
 - 📸 **Instagram**: [![Instagram](https://img.shields.io/badge/Instagram-@ankit.bh_-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ankit.bh_/)
 
 ---

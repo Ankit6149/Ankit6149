@@ -34,8 +34,8 @@
 
 ---
 
-## 🏆 GitHub Trophies:
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=juicyfresh)
+## 🏆 GitHub Trophies
+<img src="https://github-profile-trophy.vercel.app/?username=Ankit6149&theme=soft&no-bg=true&no-frame=true&margin-w=10&margin-h=10" alt="GitHub Trophies" />
 
 ---
 

@@ -23,7 +23,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
 
 📌 **Check out my progress:** [LeetCode Profile](https://leetcode.com/u/ankit_bh_/)
 
-<div>
+<div align="center">
   <!-- LeetCode Stats Card -->
   <img src="https://leetcard.jacoblin.cool/ankit_bh_?theme=nord" alt="LeetCode Stats">
   
@@ -33,7 +33,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
   <!-- LeetCode Language Breakdown -->
   <!-- <img src="https://leetcode-ranking-api.vercel.app/api?username=ankit_bh_" alt="LeetCode Languages" height="200px"/> -->
 </div>
-<table>
+<!-- <table>
   <tr>
     <td colspan="2">
       <img src="https://leetcard.jacoblin.cool/ankit_bh_?theme=dark&font=Karma&ext=heatmap" width="400"/>
@@ -50,7 +50,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
       <img src="https://img.shields.io/badge/Hard-9%2F796-red?style=for-the-badge" />
     </td>
   </tr>
-</table>
+</table> -->
 <!-- ![LeetCode Stats](https://leetcard.yushuv.com/api?user=ankit_bh_&theme=dark&style=circular) -->
 
 ---

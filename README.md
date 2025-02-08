@@ -17,6 +17,26 @@
 - Developing **ML/AI projects** and exploring **cutting-edge technologies**.
 
 ---
+## 📊 GitHub Stats & Streak:
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" height="160"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak" height="160"/>
+</div>
+
+---
+
+## 🛠️ Languages & Tools | 🔥 Most Used Languages  
+<div align="center" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+  <div align="left">
+    <ul>
+      <li>🔹 **Programming Languages**: C++, Python, JavaScript, SQL</li>
+      <li>🔹 **Web Technologies**: HTML, CSS, JavaScript, React</li>
+      <li>🔹 **Machine Learning**: TensorFlow, Keras, PyTorch</li>
+      <li>🔹 **Tools**: Git, GitHub, VSCode, MATLAB</li>
+    </ul>
+  </div>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
+</div>
 
 ## 📊 GitHub Stats & Streak:
 <table align="center" border="0">

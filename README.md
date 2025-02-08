@@ -26,7 +26,7 @@
 ---
 
 ## 🛠️ Languages & Tools   
-<table align="left">
+<table align="center">
   <tr>
     <td>
       <ul>

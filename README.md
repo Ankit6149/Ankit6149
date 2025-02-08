@@ -36,7 +36,7 @@
         <li><strong>Tools</strong>: Git, GitHub, VSCode, MATLAB</li>
       </ul>
     </td>
-    <td align="center">
+    <td>
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
     </td>
   </tr>

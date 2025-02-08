@@ -17,13 +17,21 @@
 - Developing **ML/AI projects** and exploring **cutting-edge technologies**.
 
 ---
+
 ## 🧠 LeetCode & Competitive Programming 🔥  
 I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**, primarily in **C++**. My focus is on **Dynamic Programming, Graphs, and Advanced DSA topics** to enhance problem-solving skills.  
 
 📌 **Check out my progress:** [LeetCode Profile](https://leetcode.com/u/ankit_bh_/)
 
 <div align="center">
+  <!-- LeetCode Stats Card -->
   <img src="https://leetcard.jacoblin.cool/ankit_bh_?theme=dark&font=Montserrat" alt="LeetCode Stats">
+  
+  <!-- LeetCode Heatmap (Streak Calendar) -->
+  <img src="https://leetcode-stats-six.vercel.app/api?username=ankit_bh_&theme=dark" alt="LeetCode Heatmap" height="200px"/>
+
+  <!-- LeetCode Language Breakdown -->
+  <img src="https://leetcode-ranking-api.vercel.app/api?username=ankit_bh_" alt="LeetCode Languages" height="200px"/>
 </div>
 
 ---

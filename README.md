@@ -36,6 +36,25 @@
 
 ---
 
+## 🛠️ Languages & Tools | 🔥 GitHub Streak  
+<table align="center">
+  <tr>
+    <td>
+      <ul>
+        <li>🔹 **Programming Languages**: C++, Python, JavaScript, SQL</li>
+        <li>🔹 **Web Technologies**: HTML, CSS, JavaScript, React</li>
+        <li>🔹 **Machine Learning**: TensorFlow, Keras, PyTorch</li>
+        <li>🔹 **Tools**: Git, GitHub, VSCode, MATLAB</li>
+      </ul>
+    </td>
+    <td>
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak" height="160"/>
+    </td>
+  </tr>
+</table>
+
+---
+
 🔥 **GitHub Streak**  
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak"/>

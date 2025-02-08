@@ -12,9 +12,9 @@
 ---
 
 ## 🔭 Current Focus:
+- Building **responsive and interactive websites** for real-world applications.
 - Working on **emotion analysis using EEG signals** with **Deep Learning** (BTP project).
 - Developing **ML/AI projects** and exploring **cutting-edge technologies**.
-- Building **responsive and interactive websites** for real-world applications.
 
 ---
 

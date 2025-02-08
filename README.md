@@ -25,33 +25,8 @@
 
 ---
 
-## 🛠️ Languages & Tools | 🔥 Most Used Languages  
-<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
-  <div align="left">
-    <ul>
-      <li>🔹 **Programming Languages**: C++, Python, JavaScript, SQL</li>
-      <li>🔹 **Web Technologies**: HTML, CSS, JavaScript, React</li>
-      <li>🔹 **Machine Learning**: TensorFlow, Keras, PyTorch</li>
-      <li>🔹 **Tools**: Git, GitHub, VSCode, MATLAB</li>
-    </ul>
-  </div>
-  <div>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
-  </div>
-</div>
-
-## 📊 GitHub Stats & Streak:
-<table align="center" border="0">
-  <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" height="160"/></td>
-    <td><img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak" height="160"/></td>
-  </tr>
-</table>
-
----
-
 ## 🛠️ Languages & Tools   
-<table align="center">
+<table align="left">
   <tr>
     <td>
       <ul>
@@ -61,7 +36,7 @@
         <li><strong>Tools</strong>: Git, GitHub, VSCode, MATLAB</li>
       </ul>
     </td>
-    <td>
+    <td align="center">
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
     </td>
   </tr>

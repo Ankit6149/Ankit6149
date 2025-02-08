@@ -1,6 +1,6 @@
 # Hi there, I'm Ankit! 👋👨‍💻
 
-**Engineering undergraduate** at **Netaji Subhas University of Technology** in New Delhi, India. Graduating in 2025. I love exploring **Machine Learning**, **Artificial Intelligence**, and **Web Development**. I enjoy building **innovative projects** that solve real-world problems! 🌍✨
+**Engineering undergraduate** at **Netaji Subhas University of Technology** in New Delhi, India. Graduating in 2025. I love exploring **Web Development**, **Machine Learning**, and **Artificial Intelligence**. I enjoy building **innovative projects** that solve real-world problems! 🌍✨
 
 ## 👨‍💻 About Me:
 - 🎓 **BTech student** specializing in **Instrumentation and Control**.

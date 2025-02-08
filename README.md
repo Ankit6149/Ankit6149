@@ -26,7 +26,7 @@
 ---
 
 ## 🛠️ Languages & Tools | 🔥 Most Used Languages  
-<div align="center" style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
   <div align="left">
     <ul>
       <li>🔹 **Programming Languages**: C++, Python, JavaScript, SQL</li>
@@ -35,7 +35,9 @@
       <li>🔹 **Tools**: Git, GitHub, VSCode, MATLAB</li>
     </ul>
   </div>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
+  <div>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
+  </div>
 </div>
 
 ## 📊 GitHub Stats & Streak:

@@ -4,8 +4,8 @@
 
 ## 👨‍💻 About Me:
 - 🎓 **BTech student** specializing in **Instrumentation and Control**.
-- 🌱 Currently exploring **Deep Learning**, **NLP**, and **AI-driven solutions**.
 - 💻 Passionate about **Frontend Web Development** with a love for creating modern, responsive user interfaces.
+- 🌱 Currently exploring **Deep Learning**, **NLP**, and **AI-driven solutions**.
 - 🎨 A creative soul with a keen interest in **designing** and **sketching**.
 - 🏀 In my free time, I love playing **basketball** and singing! 🎶
 
@@ -40,21 +40,6 @@
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak"/>
 </p>
-
----
-
-## 📫 Let's Connect:
-<div style="display: flex; justify-content: flex-start; gap: 20px;">
-  <a href="mailto:ankitbhardwaj80100@gmail.com">
-    <img src="https://img.icons8.com/fluency/48/000000/gmail.png" alt="Email" width="60px" />
-  </a>
-  <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/">
-    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="60px" />
-  </a>
-  <a href="https://www.instagram.com/ankit.bh_/">
-    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram" width="60px" />
-  </a>
-</div>
 
 ---
 

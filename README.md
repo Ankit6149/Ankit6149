@@ -17,10 +17,13 @@
 - Developing **ML/AI projects** and exploring **cutting-edge technologies**.
 
 ---
-## 📊 GitHub Stats & Streak:
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" height="160"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak" height="160"/>
+## 🧠 LeetCode & Competitive Programming 🔥  
+I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**, primarily in **C++**. My focus is on **Dynamic Programming, Graphs, and Advanced DSA topics** to enhance problem-solving skills.  
+
+📌 **Check out my progress:** [LeetCode Profile](https://leetcode.com/u/ankit_bh_/)
+
+<div align="center">
+  <img src="https://leetcard.jacoblin.cool/ankit_bh_?theme=dark&font=Montserrat" alt="LeetCode Stats">
 </div>
 
 ---
@@ -41,6 +44,14 @@
     </td>
   </tr>
 </table>
+
+---
+
+## 📊 GitHub Stats & Streak:
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" height="160"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak" height="160"/>
+</div>
 
 ---
 

@@ -18,24 +18,6 @@
 
 ---
 
-## 📊 GitHub Stats & Languages Used:
-<table align="center">
-  <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" height="160"/></td>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Top Languages" height="160"/></td>
-  </tr>
-</table>
-
----
-
-## 🛠️ Languages and Tools I Use:
-- **Programming Languages**: C++, Python, JavaScript, SQL
-- **Web Technologies**: HTML, CSS, JavaScript, React
-- **Machine Learning**: TensorFlow, Keras, PyTorch
-- **Tools**: Git, GitHub, VSCode, MATLAB
-
----
-
 ## 📊 GitHub Stats & Streak:
 <table align="center">
   <tr>
@@ -46,15 +28,15 @@
 
 ---
 
-## 🛠️ Languages & Tools | 🔥 Most Used Languages  
+## 🛠️ Languages & Tools   
 <table align="center">
   <tr>
     <td>
       <ul>
-        <li>🔹 **Programming Languages**: C++, Python, JavaScript, SQL</li>
-        <li>🔹 **Web Technologies**: HTML, CSS, JavaScript, React</li>
-        <li>🔹 **Machine Learning**: TensorFlow, Keras, PyTorch</li>
-        <li>🔹 **Tools**: Git, GitHub, VSCode, MATLAB</li>
+        <li><strong>Programming Languages</strong>: C++, Python, JavaScript, SQL</li>
+        <li><strong>Web Technologies</strong>: HTML, CSS, JavaScript, React</li>
+        <li><strong>Machine Learning</strong>: TensorFlow, Keras, PyTorch</li>
+        <li><strong>Tools</strong>: Git, GitHub, VSCode, MATLAB</li>
       </ul>
     </td>
     <td>
@@ -62,13 +44,6 @@
     </td>
   </tr>
 </table>
-
----
-
-🔥 **GitHub Streak**  
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak"/>
-</p>
 
 ---
 

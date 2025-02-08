@@ -33,7 +33,10 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
   <!-- LeetCode Language Breakdown -->
   <!-- <img src="https://leetcode-ranking-api.vercel.app/api?username=ankit_bh_" alt="LeetCode Languages" height="200px"/> -->
 </div>
-![LeetCode Stats](https://leetcard.yushuv.com/api?user=ankit_bh_&theme=dark&style=circular)
+<div>
+  <img src="https://leetcard.yushuv.com/api?user=ankit_bh_&theme=dark&style=circular" alt="LeetCode Stats">
+</div>
+<!-- ![LeetCode Stats](https://leetcard.yushuv.com/api?user=ankit_bh_&theme=dark&style=circular) -->
 
 ---
 

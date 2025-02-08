@@ -26,6 +26,11 @@
   </tr>
 </table>
 
+🔥 **GitHub Streak**  
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak"/>
+</p>
+
 ---
 
 ## 🛠️ Languages and Tools I Use:

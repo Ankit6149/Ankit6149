@@ -19,7 +19,7 @@
 ---
 
 ## 📊 GitHub Stats & Streak:
-<table align="center">
+<table align="center" border="0">
   <tr>
     <td><img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" height="160"/></td>
     <td><img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak" height="160"/></td>

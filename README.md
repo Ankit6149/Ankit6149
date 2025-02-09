@@ -86,6 +86,22 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
     </td>
   </tr>
 </table>
+<table>
+  <tr>
+    <!-- Making this element wider than others -->
+    <td style="width: 70%; padding: 10px;">  
+      <ul>
+        <li><strong>Programming Languages</strong>: C++, Python, JavaScript, SQL</li>
+        <li><strong>Web Technologies</strong>: HTML, CSS, JavaScript, React</li>
+        <li><strong>Machine Learning</strong>: TensorFlow, Keras, PyTorch</li>
+        <li><strong>Tools</strong>: Git, GitHub, VSCode, MATLAB</li>
+      </ul>
+    </td>
+    <td style="width: 30%; padding: 10px;">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
+    </td>
+  </tr>
+</table>
 
 ---
 

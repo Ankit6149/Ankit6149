@@ -33,7 +33,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
   <!-- LeetCode Language Breakdown -->
   <!-- <img src="https://leetcode-ranking-api.vercel.app/api?username=ankit_bh_" alt="LeetCode Languages" height="200px"/> -->
 </div>
- <img src="https://leetcard.jacoblin.cool/ankit_bh_?ext=heatmap" width="600" />
+ <img src="[https://leetcard.jacoblin.cool/ankit_bh_?ext=heatmap](https://leetcard.jacoblin.cool/ankit_bh_?theme=light&font=Karla&ext=activity"/>
  <p align="center">
   <img src="https://img.shields.io/badge/Easy-44%2F856-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Medium-54%2F1793-orange?style=for-the-badge" />

@@ -34,6 +34,11 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
   <!-- <img src="https://leetcode-ranking-api.vercel.app/api?username=ankit_bh_" alt="LeetCode Languages" height="200px"/> -->
 </div>
  <img src="https://leetcard.jacoblin.cool/ankit_bh_?theme=dark&ext=contest" alt="LeetCode Stats">
+ <p align="center">
+  <img src="https://img.shields.io/badge/Easy-44%2F856-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Medium-54%2F1793-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Hard-9%2F796-red?style=for-the-badge" />
+</p>
 <!-- <table>
   <tr>
     <td colspan="2">

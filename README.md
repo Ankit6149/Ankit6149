@@ -79,6 +79,11 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
   <img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" height="160"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ankit6149&theme=radical" alt="GitHub Streak" height="160"/>
 </div>
+## 📊 GitHub Stats & Streak:
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical" alt="Ankit's GitHub Stats" height="160"/>
+  <img src="https://github-readme-streak-stats.demolab.com/?user=Ankit6149&theme=radical" alt="GitHub Streak" height="160"/>
+</div>
 
 ---
 

@@ -23,7 +23,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
 
 📌 **Check out my progress:** [LeetCode Profile](https://leetcode.com/u/ankit_bh_/)
 
-<div>
+<div align="center">
   <!-- LeetCode Stats Card -->
   <img src="https://leetcard.jacoblin.cool/ankit_bh_?theme=nord&font=IBM%20Plex%20Sans" alt="LeetCode Stats">
   

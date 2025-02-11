@@ -25,7 +25,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
 
 <div align="center">
   <!-- LeetCode Stats Card -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&exclude_repo=my-github-strek" height="160"/>
+  <img src="https://leetcard.jacoblin.cool/ankit_bh_?theme=nord&font=IBM%20Plex%20Sans" alt="LeetCode Stats">
 
   
   <!-- LeetCode Heatmap (Streak Calendar) -->
@@ -68,7 +68,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
       </ul>
     </td>
     <td>
-      <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&hide_border=true" alt="Most Used Languages" height="160"/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&hide_border=true&exclude_repo=github-readme-streak-stats" height="160"/>
     </td>
   </tr>
 </table>

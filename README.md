@@ -67,7 +67,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
       </ul>
     </td>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
+      <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical" alt="Most Used Languages" height="160"/>
     </td>
   </tr>
 </table>

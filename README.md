@@ -68,7 +68,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
       </ul>
     </td>
     <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&hide_border=true&exclude_repo=my-github-streks" height="160"/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&hide_border=true&exclude_repo=my-github-streks,linear-regression-ml" height="160"/>
     </td>
   </tr>
 </table>

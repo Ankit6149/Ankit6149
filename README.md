@@ -62,7 +62,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
     <td>
       <ul>
         <li><strong>Programming Languages</strong>: C++, Python, JavaScript, SQL</li>
-        <li><strong>Web Technologies</strong>: HTML, CSS, JavaScript, React</li>
+        <li><strong>Web Technologies</strong>: HTML, CSS, Tailwind CSS, React, Redux</li>
         <li><strong>Machine Learning</strong>: TensorFlow, Keras, PyTorch</li>
         <li><strong>Tools</strong>: Git, GitHub, VSCode, MATLAB</li>
       </ul>

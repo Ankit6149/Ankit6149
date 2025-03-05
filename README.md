@@ -1,5 +1,5 @@
 <h1 align="center">
-# Hi there, I'm Ankit! 👋👨‍💻
+Hi there, I'm Ankit! 👋👨‍💻
 </h1>
 
 **Engineering undergraduate** at **Netaji Subhas University of Technology** in New Delhi, India. Graduating in 2025. I love exploring **Web Development**, **Machine Learning**, and **Artificial Intelligence**. I enjoy building **innovative projects** that solve real-world problems! 🌍✨

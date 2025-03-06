@@ -5,7 +5,7 @@ Hi there, I'm Ankit! 👋👨‍💻
 **Engineering undergraduate** at **Netaji Subhas University of Technology** in New Delhi, India. Graduating in 2025. I love exploring **Web Development**, **Machine Learning**, and **Artificial Intelligence**. I enjoy building **innovative projects** that solve real-world problems! 🌍✨
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,python,js,html,css,tailwind,styledcomponents,react,nextjs,redux,nodejs,npm,babel,vite,vercel,netlify,vscode,github,git,matlab,tensorflow" />
+  <img src="https://skillicons.dev/icons?i=cpp,python,js,mysql,html,css,tailwind,styledcomponents,react,nextjs,redux,supabase,firebase,nodejs,npm,babel,figma,vite,vercel,netlify,vscode,sublime,powershell,github,git,matlab,arduino,tensorflow,anaconda,windows" />
 </p>
 
 ## 👨‍💻 About Me:

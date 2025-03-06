@@ -57,7 +57,6 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
   </tr>
 </table> -->
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&hide_border=true&exclude_repo=my-github-streks,linear-regression-ml" align="right" height="160">
 
 <ul>
   <li><strong>Programming Languages</strong>: C++, Python, JavaScript, SQL</li>
@@ -65,6 +64,9 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
   <li><strong>Machine Learning</strong>: TensorFlow, Keras, PyTorch</li>
   <li><strong>Tools</strong>: Git, GitHub, VSCode, MATLAB</li>
 </ul>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&hide_border=true&exclude_repo=my-github-streks,linear-regression-ml" align="right" height="160">
+
 
 
 

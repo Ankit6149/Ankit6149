@@ -65,13 +65,14 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
 
 <ul>
   <li><strong>Programming Languages</strong>: C++, Python, JavaScript, SQL</li>
-  <li><strong>Web Technologies</strong>: HTML, CSS, Tailwind CSS, React, Redux</li>
+  <li><strong>Web Technologies</strong>: HTML, CSS, Tailwind CSS, React, Redux,React Query, Vite</li>
+  <li><strong>Designing skills & Tools</strong>: UI/UX Desing, SEO, Canva, Figma</li>
   <li><strong>Machine Learning</strong>: TensorFlow, Keras, PyTorch</li>
-  <li><strong>Tools</strong>: Git, GitHub, VSCode, MATLAB</li>
+  <li><strong>Development Tools</strong>: Git, GitHub, Vercel, VS Code, Jupyter Notebook</li>
+  <li><strong>Other Tools</strong>: MATLAB, Simulink</li>
 </ul>
 
 ---
-
 
 ## 📊 GitHub Stats & Streak:
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">

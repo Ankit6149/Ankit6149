@@ -74,12 +74,10 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
 
 ---
 
-## 📊 GitHub Stats & Streak:
+## 📊 GitHub Stats:
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
   <img src="https://github-readme-stats.vercel.app/api?username=Ankit6149&show_icons=true&theme=radical&hide_border=true" alt="Ankit's GitHub Stats" height="160"/>
-  <a href="https://git.io/streak-stats">
-    <img src="https://my-github-streks.vercel.app?user=Ankit6149&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" height="160"/>
-  </a>
+  
 </div>
 
 ---

@@ -19,7 +19,7 @@ Hi there, I'm Ankit! 👋👨‍💻
 
 ## 🔭 Current Focus:
 - Building **responsive and interactive websites** for real-world applications.
-- Working on **emotion analysis using EEG signals** with **Deep Learning** (BTP project).
+- Working on **emotion analysis using EEG signals** with **Deep Learning**.
 - Developing **ML/AI projects** and exploring **cutting-edge technologies**.
 
 ---
@@ -61,15 +61,16 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
   </tr>
 </table> -->
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&hide_border=true&exclude_repo=my-github-streks,linear-regression-ml" align="right" height="160">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ankit6149&layout=compact&theme=radical&hide_border=true&exclude_repo=my-github-streks" align="right" height="160">
 
 <ul>
   <li><strong>Programming Languages</strong>: C++, Python, JavaScript, SQL</li>
-  <li><strong>Web Technologies</strong>: HTML, CSS, Tailwind CSS, React, Redux, React Query</li>
-  <li><strong>Designing skills & Tools</strong>: UI/UX Desing, SEO, Canva, Figma</li>
-  <li><strong>Machine Learning</strong>: TensorFlow, Keras, PyTorch</li>
+  <li><strong>Frontend Technologies</strong>: React, Next.js, HTML, CSS, Tailwind CSS, Redux, React Query</li>
+  <li><strong>Backend & Databases</strong>: Node.js, Express.js, MongoDB, MySql, Supabase</li>
+  <li><strong>Machine Learning & AI</strong>: TensorFlow, Keras, PyTorch, Deep learning, Generative AI</li>
   <li><strong>Development Tools</strong>: Git, GitHub, Vercel, VS Code, Jupyter Notebook</li>
-  <li><strong>Other Tools</strong>: MATLAB, Simulink</li>
+  <li><strong>Cloud & Infrastructure</strong>: Google Cloud Platform, Azure, n8n, vite, npm</li>
+  <li><strong>Other skills & Tools</strong>: UI/UX Desing, SEO, Canva, Figma, MATLAB, Simulink</li>
 </ul>
 
 ---

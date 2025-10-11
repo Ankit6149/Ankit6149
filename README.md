@@ -65,7 +65,7 @@ I actively solve **Data Structures & Algorithms (DSA)** problems on **LeetCode**
 
 <ul>
   <li><strong>Programming Languages</strong>: C++, Python, JavaScript, SQL</li>
-  <li><strong>Frontend Technologies</strong>: React, Next.js, HTML, CSS, Tailwind CSS, Redux, React Query</li>
+  <li><strong>Frontend Technologies</strong>: React, Next.js, HTML, CSS, Tailwind CSS, Redux</li>
   <li><strong>Backend & Databases</strong>: Node.js, Express.js, MongoDB, MySql, Supabase</li>
   <li><strong>Machine Learning & AI</strong>: TensorFlow, Keras, PyTorch, Deep learning, Generative AI</li>
   <li><strong>Development Tools</strong>: Git, GitHub, Vercel, VS Code, Jupyter Notebook</li>

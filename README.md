@@ -5,12 +5,12 @@ Hi there, I'm Ankit! 👋👨‍💻
 **Engineering undergraduate** at **Netaji Subhas University of Technology** in New Delhi, India. Graduating in 2025. I love exploring **Web Development**, **Machine Learning**, and **Artificial Intelligence**. I enjoy building **innovative projects** that solve real-world problems! 🌍✨
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,python,js,mysql,html,css,tailwind,styledcomponents,react,nextjs,redux,supabase,firebase,nodejs,npm,babel,figma,vite,vercel,netlify,vscode,sublime,powershell,git,github,matlab,arduino,tensorflow,anaconda,windows" />
+  <img src="https://skillicons.dev/icons?i=cpp,python,js,mysql,html,css,tailwind,styledcomponents,react,nextjs,redux,mongodb,express,supabase,nodejs,tensorflow,anaconda,googlecloud,azure,npm,postman,babel,vite,vercel,netlify,vscode,git,github,matlab,arduino" />
 </p>
 
 ## 👨‍💻 About Me:
 - 🎓 **BTech student** specializing in **Instrumentation and Control**.
-- 💻 Passionate about **Frontend Web Development** with a love for creating modern, responsive user interfaces.
+- 💻 Passionate about **Web Development** with a love for creating modern, responsive user interfaces.
 - 🌱 Currently exploring **Deep Learning**, **NLP**, and **AI-driven solutions**.
 - 🎨 A creative soul with a keen interest in **designing** and **sketching**.
 - 🏀 In my free time, I love playing **basketball** and singing! 🎶

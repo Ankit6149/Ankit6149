@@ -1,4 +1,4 @@
-<h1 align="center">
+q<h1 align="center">
 Hi there, I'm Ankit! 👋👨‍💻
 </h1>
 
@@ -14,13 +14,6 @@ Hi there, I'm Ankit! 👋👨‍💻
 - 🌱 Currently exploring **Deep Learning**, **NLP**, and **AI-driven solutions**.
 - 🎨 A creative soul with a keen interest in **designing** and **sketching**.
 - 🏀 In my free time, I love playing **basketball** and singing! 🎶
-
----
-
-## 🔭 Current Focus:
-- Building **responsive and interactive websites** for real-world applications.
-- Working on **emotion analysis using EEG signals** with **Deep Learning**.
-- Developing **ML/AI projects** and exploring **cutting-edge technologies**.
 
 ---
 

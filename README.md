@@ -1,4 +1,4 @@
-q<h1 align="center">
+<h1 align="center">
 Hi there, I'm Ankit! 👋👨‍💻
 </h1>
 
@@ -9,11 +9,11 @@ Hi there, I'm Ankit! 👋👨‍💻
 </p>
 
 ## 👨‍💻 About Me:
-- 🎓 **BTech student** specializing in **Instrumentation and Control**.
-- 💻 Passionate about **Web Development** with a love for creating modern, responsive user interfaces.
-- 🌱 Currently exploring **Deep Learning**, **NLP**, and **AI-driven solutions**.
-- 🎨 A creative soul with a keen interest in **designing** and **sketching**.
-- 🏀 In my free time, I love playing **basketball** and singing! 🎶
+- 🎓 B.Tech in **Instrumentation & Control Engineering**, **Netaji Subhas University of Technology (2025)**
+- 💻 Strong foundation in **Data Structures & Algorithms (C++)**
+- ⚙️ Experience building **full-stack web applications** using React & Node.js
+- 🤖 Interested in **Machine Learning & AI-driven systems**
+
 
 ---
 

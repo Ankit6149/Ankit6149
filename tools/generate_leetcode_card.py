@@ -1,2 +1,218 @@
-import base64,zlib
-exec(compile(zlib.decompress(base64.b85decode('c-pO5d2`xG7XP15(W`8g#Y6}sKpbOS#X254wYKB&k*bV~q8h0IjfKQWEg#GB-S@pdgfQ62RCX$ps9Wzoe*Ib)hVdKY{+tZshmap+WSLK*&?o1N@#7?5WSJ(@Fk*zp0ZCaLu#`~Z=NV5H<mT%s@o5^^hGA4H(-gMG<7v+Gl#RzETr88617n<U%EKhiDiyt#&XzRIm|p*xC9!_y?3q8Mbg9>Q8b#s6PT5~M%ed6Cq<jvWTE!JC<%{P<WM}jl|Ic|CWtxIzK3%d(<@9=Zb@u!D`0o0g42Uu3e3|v@^$5K6!CTu;7WEk@pZ^sZmEZ49uD>A}cn8YU7cyh~E@SDHjEVWr92PNMus*rrX&BG`Q6;MiAqxr-WdV|!8<K)r5)q=;Vxi-_A}NJb#51xM`&m9&g!~2~n4Lz+ghq;)5bEFHyDWpyUgitn48rL&^z(?n5I@OdE|~>Ero_p=BO1?gI%D9-Bw~wWLA)xqFTp4@2;XHlN%Y79!MLuhD<ajEfKAC1>t?L%F8P`9v`T76V2#iFLfs?@ULcN`Wjn|h%gkIEBA`Z}h#*_Uc%*4aL16}aD?>|zg??PGt2T=<OJ-F_RTTk(w@bvnmj9Y6PK1=QZWWsW<#d3SZMNo&LVah0Rk4Hr8OKS?S<Gv<FH1DYpvxt+h$!hg`eaz!^w(_4QkDYgbbp2A^;O|j{WUjMO>H;>g{bQy`A--{wBEKG<TT`G`J|?*uXYTbS7Kgo9v6(ylVD(6eYv?+6f$H_A)mjF7A%t`i%qq*2oD!5$@!q!s1lk%n6o9+59=4=m-Hn{XrMES&zY&oKrRi;svR(ys%lZ{K(9D$=p)m>1Q-@sL0-kW)HR0W3a13HLojc&r!>qMxrT}bJ5SOyNzJLT16Rm5g|ZId@04u9ZRpwokcx$5UCj$_KGG<M0uG@W{!1>Cn29=udhVB*j9Se=(*!jMGeJpM1XfLrm6Tzvb(d^<ax8i>6P?l*-BGm3J?OAd??`LPfCB=yGKNtEb<ltgIicB$dc0skm@m}g4C??MWox6mA!iGaCft*;-9eFZ;9mg=yt*G%Hvuo9%0P%#=_|HXOjX88<Y0pIq`y_-a_@daI6}cOH#fpXsKAg$bt_+zQ$<#z)i_O_%2Bldf1k%sVZi4ymjlwmT83ChVaD&pUp!w%Y!mj83cQw?0n>e9v<Y-2<H|4zHX25?YQ3_58$6{Wn<(wi(LPX?xhRMC4Ku3Zfd0M_<cKtcxY4%1b_U0!`M_QV5nW6ID)jV;S;K$toslIr?i(X$_a`{k&>fi>2!8*)z+xotM<Wdb2pf%}Qn4p3byz_#3Uf9EBk~A5Zi{>*5#W?OL4P4#wZ_~C0adYEjuqN=UvowxHbVDDCGR6~8W4(2p==i@@Y#U!Fz%S;@b9>wiBXAWFiSp_axT>mO8U178-?_nBURdR&>Cltv+Z-$BCo)sz$S?;VAy`Vk#=wx#3G=PFYX1l$i(QGV^FF`1*K)AP-GfJ!D!&v?L$=>7+sm#0X~~rtpKu-RhXgBth6H_4c3l6wjgGxYI86{rS^&2b|K}833f)LzEQf>ZSWH7%apn|2&&<;s)i#O%XzpI05H;SjuHBr&Zcf*PoNtXf1&6Zh`d&JOYy4$2ZrrZi|B-5O5o%W=Mz~8S~xz+R7Df$q8Dsf?;X3fMJa68rMUG*SafihGM|&@fw6k-+s<@tkQaCsF2b|W18dn6^8K8JvpF9aZqFboFgh)}Z4ju8XkdI`J=P352G(Knz+fYA{obT&)Q=AKDaYAfD%YJ@cVC-<z0rdWq^;4|pC{?SScE|UrAYjUW*ID#I1#QIM=LqntB9-*>&W*?`*sIE?`gwLp5a}yBkMqVu8OzWgR{0Uu%SADLKR`DcpX_eVe01#oc>~;VZI<kP1|WX?VjtkVIdjxz(0fY47nS&*R7P{V0v(Ha0uOx_n8>{#VHbo$fu_#`>AOs>8$QH8jU(o6ghJoudzwiN<KgsA4B%^uLNS=APs^<Wb-afBFI^|04X?q*F+2>7EB-+JmfG&1rS~1sB$P*VW9Snqn&|Ej9Drd#YG3xf%G5&B?$pi<O=64fk)MKan&H1ylaRtwKPW{d~1{;6BsZbg5)W-59=rkWM}*Zbr51pJ69_(C+2<9X*8f`me1rfOz^37!)6I1cb}~xcpF(6jk6k<8cu%|_1q^PoUSu*V7bO&%0?f4LfF)sI;^9G!BC#U#d=Fzv;8CDB)_;s72J;Z<D8;fHk?i1%)=V)W=rZb>*lu$c&=TuSsu~Ug6j_Cfo4`g@he~s2URs(0si-i-C90t@z{q#{7wiD>nbyl{b_~?I`pG(iPv>e3i$27I4U5?6DZ)7O1jnEDe0Qyt|bt;2s4LuEfKWTrJA1*sBulEu8eDKKbZJ>qoxG9U_s?@M$m>Dev}v(aGf$gpkq}-IE=dle7*39ch>eAU$t6qedhf^E?_i;7oOWVZ+AV?bI(1eNt{j#mQZe9;~ZX*5)aV-QJCqtPTT1TBkD73Q-!Zh>3OTYg_s3ftKFkrY~quX+v6{vP84YF@ORyUUtGqI_BQxlRzRA97b~~WO(_lN)HqU8u4s9jJQR);@(@a)m3=&M+JJ062z8tAkm5lhV05j8#&7{E<*MnooL1*`u4I^gLad6~j##}Bg)xKZ42%@-oyB%QvpG#uiU-`*`S6QA0mKPNwqL4Kk;BB50kkeqD%{?fS?d9ex1luPN+Uedffw$eH?H@c!&3m!>r&rB<ejV*!rPtipUgYCzWs7LJSR6_&cB{~+7az`rD&(qdtb`+@bcfEFHheT;Fe16Js;H&yT{8yQpbJYl&kB{7sKms<a~H}dN({hc~ere(fO`Ts;9&ipfQqv^zB7{c9n1BCx(OLj~@^A*zPsEvgf;nLUmND4|v77`6g?pyT4_<wnsfoBNm5MI+!heZ?J@&>=D0_76&!nc;3|IIB#TID?1t9d@HyMK-b(&w*Ymx1Z*(faV3;{g}h)Ibo~jQ6z>U<6K{5ZfcJxg(W}vSSE|B-a{u+5rWD(1?hm6p7*!FfON-L?PClKtYEcL3;^fokyNkC&)ouSDLRAt{gi2naejr#Auj@9Q{lV&ae<N60<2&JU-S+$8IvZYpdNWuq{`<4RDhnxsg}2Nf2vytjraihhRBo&HH$o-#y%(r%_x(U=Y`Y<MHyhYq9URzyCSh!fi)K~Kc#pFqxUZ;B7vguFF->QgDZWtXpL%TkOeLmCc>xxi_)WMV7^bs)!D4<T-l&iKlFX(-fHK8<)2P*o-v<DW*pvbo4Ge@LKAz0S#=ERZ&X+lUSmQ5CHo(cz5<ew`DGLU-Y0kF3I4U7!ufS12=kXZzkH=&%AjWvSpkX{78`3wV6JNVaOy%Er2CsfQK@z)|sR|LcG!>PD?e^j!2vbuoGGVDj*mIciaq>_yyv+HOhMbKtb7tw2(v~_)TU7;V`11<DIZUy9TI)g_{|C=EsYU')).decode(), __file__, "exec"))
+"""Fetch public LeetCode statistics and render theme-aware profile cards."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import urllib.request
+from dataclasses import dataclass
+from html import escape
+from pathlib import Path
+
+GRAPHQL_URL = "https://leetcode.com/graphql"
+QUERY = """
+query profileCard($username: String!) {
+  matchedUser(username: $username) {
+    username
+    submitStatsGlobal {
+      acSubmissionNum {
+        difficulty
+        count
+        submissions
+      }
+    }
+    profile {
+      ranking
+    }
+    languageProblemCount {
+      languageName
+      problemsSolved
+    }
+  }
+}
+"""
+
+
+@dataclass
+class Profile:
+    username: str
+    total: int
+    easy: int
+    medium: int
+    hard: int
+    ranking: int | None
+    languages: list[tuple[str, int]]
+
+
+def fetch_profile(username: str) -> Profile:
+    payload = json.dumps(
+        {"query": QUERY, "variables": {"username": username}}
+    ).encode("utf-8")
+    request = urllib.request.Request(
+        GRAPHQL_URL,
+        data=payload,
+        headers={
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 GitHub-Profile-Card",
+            "Referer": f"https://leetcode.com/u/{username}/",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=25) as response:
+        result = json.loads(response.read().decode("utf-8"))
+
+    if result.get("errors"):
+        raise RuntimeError(result["errors"][0].get("message", "LeetCode query failed"))
+
+    user = result.get("data", {}).get("matchedUser")
+    if not user:
+        raise RuntimeError(f"LeetCode user {username!r} was not found")
+
+    counts = {
+        item["difficulty"]: int(item["count"])
+        for item in user["submitStatsGlobal"]["acSubmissionNum"]
+    }
+    languages = sorted(
+        [
+            (item["languageName"], int(item["problemsSolved"]))
+            for item in user.get("languageProblemCount", [])
+            if int(item.get("problemsSolved", 0)) > 0
+        ],
+        key=lambda item: (-item[1], item[0].lower()),
+    )
+
+    return Profile(
+        username=user["username"],
+        total=counts.get("All", 0),
+        easy=counts.get("Easy", 0),
+        medium=counts.get("Medium", 0),
+        hard=counts.get("Hard", 0),
+        ranking=user.get("profile", {}).get("ranking"),
+        languages=languages,
+    )
+
+
+def language_chips(languages: list[tuple[str, int]], theme: str) -> str:
+    if theme == "light":
+        fill, stroke, text = "#f6f8fa", "#d0d7de", "#24292f"
+    else:
+        fill, stroke, text = "#161b22", "#30363d", "#f0f6fc"
+
+    x, y = 632.0, 304.0
+    max_x = 1118.0
+    line_height = 36.0
+    output: list[str] = []
+
+    for language, solved in languages:
+        label = f"{language} {solved}"
+        width = max(70.0, 26.0 + len(label) * 7.5)
+        if x + width > max_x:
+            x = 632.0
+            y += line_height
+        output.append(
+            f'<rect x="{x:.1f}" y="{y:.1f}" width="{width:.1f}" height="28" '
+            f'rx="14" fill="{fill}" stroke="{stroke}"/>'
+            f'<text x="{x + width / 2:.1f}" y="{y + 19:.1f}" text-anchor="middle" '
+            f'class="mono" fill="{text}">{escape(label)}</text>'
+        )
+        x += width + 10.0
+
+    return "".join(output)
+
+
+def render(profile: Profile, theme: str) -> str:
+    dark = theme == "dark"
+    background = "#0d1117" if dark else "#ffffff"
+    panel = "#161b22" if dark else "#f6f8fa"
+    border = "#30363d" if dark else "#d0d7de"
+    text = "#f0f6fc" if dark else "#24292f"
+    muted = "#8b949e" if dark else "#57606a"
+    track = "#30363d" if dark else "#d8dee4"
+    accent = "#2f9e8f"
+    easy = "#2f9e8f"
+    medium = "#bf8700" if dark else "#9a6700"
+    hard = "#6e8ec6" if dark else "#576f9e"
+
+    max_count = max(profile.easy, profile.medium, profile.hard, 1)
+    easy_width = 246 * profile.easy / max_count
+    medium_width = 246 * profile.medium / max_count
+    hard_width = 246 * profile.hard / max_count
+    ranking = f"{profile.ranking:,}" if profile.ranking else "Not ranked"
+    primary = profile.languages[0][0] if profile.languages else "None"
+    solved_arc = min(1.0, profile.total / 1000.0)
+    dash = 408.4 * solved_arc
+
+    chips = language_chips(profile.languages, theme)
+    height = 398 if len(profile.languages) <= 5 else 432
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="{height}" viewBox="0 0 1160 {height}" role="img" aria-labelledby="title desc">
+<title id="title">LeetCode profile for {escape(profile.username)}</title>
+<desc id="desc">{profile.total} solved problems, ranking {escape(ranking)}, with difficulty and language breakdown.</desc>
+<style>
+  .title {{ font: 600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }}
+  .name {{ font: 600 26px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }}
+  .metric {{ font: 600 32px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }}
+  .body {{ font: 400 15px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }}
+  .label {{ font: 600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; letter-spacing: .7px; }}
+  .mono {{ font: 500 12px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,monospace; }}
+</style>
+<rect x="1" y="1" width="1158" height="{height - 2}" rx="12" fill="{background}" stroke="{border}"/>
+<rect x="24" y="24" width="520" height="{height - 48}" rx="10" fill="{panel}" stroke="{border}"/>
+<text x="52" y="58" class="label" fill="{accent}">LEETCODE</text>
+<text x="52" y="94" class="name" fill="{text}">{escape(profile.username)}</text>
+<text x="52" y="122" class="body" fill="{muted}">Problem solving profile</text>
+
+<circle cx="156" cy="235" r="65" fill="none" stroke="{track}" stroke-width="9"/>
+<circle cx="156" cy="235" r="65" fill="none" stroke="{accent}" stroke-width="9" stroke-linecap="round" stroke-dasharray="{dash:.1f} 408.4" transform="rotate(-90 156 235)"/>
+<text x="156" y="229" text-anchor="middle" class="metric" fill="{text}">{profile.total}</text>
+<text x="156" y="257" text-anchor="middle" class="label" fill="{muted}">TOTAL SOLVED</text>
+
+<text x="286" y="196" class="label" fill="{muted}">RANKING</text>
+<text x="286" y="232" class="metric" fill="{text}">{escape(ranking)}</text>
+<text x="286" y="282" class="label" fill="{muted}">PRIMARY LANGUAGE</text>
+<text x="286" y="318" class="metric" fill="{text}">{escape(primary)}</text>
+
+<text x="604" y="58" class="title" fill="{text}">Solved breakdown</text>
+<text x="604" y="86" class="body" fill="{muted}">Difficulty, ranking, and every language used</text>
+
+<text x="604" y="130" class="label" fill="{muted}">EASY</text>
+<rect x="604" y="144" width="246" height="10" rx="5" fill="{track}"/>
+<rect x="604" y="144" width="{easy_width:.1f}" height="10" rx="5" fill="{easy}"/>
+<text x="876" y="154" class="body" fill="{text}">{profile.easy}</text>
+
+<text x="604" y="183" class="label" fill="{muted}">MEDIUM</text>
+<rect x="604" y="197" width="246" height="10" rx="5" fill="{track}"/>
+<rect x="604" y="197" width="{medium_width:.1f}" height="10" rx="5" fill="{medium}"/>
+<text x="876" y="207" class="body" fill="{text}">{profile.medium}</text>
+
+<text x="604" y="236" class="label" fill="{muted}">HARD</text>
+<rect x="604" y="250" width="246" height="10" rx="5" fill="{track}"/>
+<rect x="604" y="250" width="{hard_width:.1f}" height="10" rx="5" fill="{hard}"/>
+<text x="876" y="260" class="body" fill="{text}">{profile.hard}</text>
+
+<text x="604" y="294" class="label" fill="{muted}">LANGUAGES USED</text>
+{chips}
+</svg>'''
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--username", required=True)
+    parser.add_argument("--light-output", type=Path)
+    parser.add_argument("--dark-output", type=Path)
+    parser.add_argument("--output", type=Path)
+    args = parser.parse_args()
+
+    profile = fetch_profile(args.username)
+    light_output = args.light_output or args.output
+    if light_output is None:
+        parser.error("--light-output or --output is required")
+    dark_output = args.dark_output or light_output.with_name("leetcode-card-dark.svg")
+
+    light_output.parent.mkdir(parents=True, exist_ok=True)
+    dark_output.parent.mkdir(parents=True, exist_ok=True)
+    light_output.write_text(render(profile, "light"), encoding="utf-8")
+    dark_output.write_text(render(profile, "dark"), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

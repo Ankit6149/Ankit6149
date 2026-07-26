@@ -23,7 +23,11 @@
 
 <p align="center">
   <a href="https://leetcode.com/u/ankit_bh_/">
-    <img src="assets/leetcode-card.svg" width="100%" alt="Ankit Bhardwaj's LeetCode profile and solved problem statistics" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/leetcode-card-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="assets/leetcode-card-light.svg" />
+      <img src="assets/leetcode-card-light.svg" width="100%" alt="Ankit Bhardwaj's LeetCode profile and solved problem statistics" />
+    </picture>
   </a>
 </p>
 

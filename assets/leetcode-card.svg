@@ -1,28 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1160" height="390" viewBox="0 0 1160 390" role="img" aria-labelledby="title desc">
 <title id="title">LeetCode profile for ankit_bh_</title>
-<desc id="desc">Custom LeetCode statistics card. Statistics are refreshed automatically.</desc>
+<desc id="desc">806 problems solved with difficulty and language breakdown.</desc>
 <style>
   .title { font: 700 28px Inter,Segoe UI,Arial,sans-serif; fill: #181b1f; }
   .name { font: 700 28px Inter,Segoe UI,Arial,sans-serif; fill: #f6f1e7; }
   .metric { font: 700 35px Inter,Segoe UI,Arial,sans-serif; }
   .body { font: 16px Inter,Segoe UI,Arial,sans-serif; }
   .mono { font: 13px ui-monospace,SFMono-Regular,Consolas,monospace; letter-spacing: .4px; }
+  .chip { fill: #181b1f; }
 </style>
-<defs><clipPath id="card"><rect x="6" y="6" width="1148" height="378" rx="28"/></clipPath></defs>
+<defs>
+  <clipPath id="card"><rect x="6" y="6" width="1148" height="378" rx="28"/></clipPath>
+</defs>
 <rect x="6" y="6" width="1148" height="378" rx="28" fill="#f6f1e7" stroke="#d5cdbc" stroke-width="2"/>
-<g clip-path="url(#card)"><path d="M6 6H560V384H6Z M430 6H620L586 92L613 174L580 260L620 384H430Z" fill="#121519"/></g>
+<g clip-path="url(#card)">
+  <path d="M6 6H560V384H6Z M430 6H620L586 92L613 174L580 260L620 384H430Z" fill="#121519"/>
+</g>
 <text x="36" y="45" class="mono" fill="#459a8e">LEETCODE</text>
 <text x="36" y="82" class="name">ankit_bh_</text>
 <text x="36" y="116" class="body" fill="#aaadaf">Problem solving profile</text>
 <circle cx="150" cy="230" r="67" fill="none" stroke="#3c4147" stroke-width="9"/>
-<circle cx="150" cy="230" r="67" fill="none" stroke="#459a8e" stroke-width="9" stroke-linecap="round" stroke-dasharray="286 421" transform="rotate(-90 150 230)"/>
-<text x="150" y="226" text-anchor="middle" class="metric" fill="#f6f1e7">...</text>
+<circle cx="150" cy="230" r="67" fill="none" stroke="#459a8e" stroke-width="9" stroke-linecap="round" stroke-dasharray="286.3 421.0" transform="rotate(-90 150 230)"/>
+<text x="150" y="226" text-anchor="middle" class="metric" fill="#f6f1e7">806</text>
 <text x="150" y="257" text-anchor="middle" class="mono" fill="#aaadaf">TOTAL SOLVED</text>
 <text x="280" y="179" class="mono" fill="#aaadaf">RANKING</text>
-<text x="280" y="216" class="metric" fill="#f6f1e7">...</text>
+<text x="280" y="216" class="metric" fill="#f6f1e7">63,076</text>
 <text x="280" y="272" class="mono" fill="#aaadaf">PRIMARY LANGUAGE</text>
 <text x="280" y="307" class="metric" fill="#f6f1e7">C++</text>
 <text x="638" y="48" class="title">Solved breakdown</text>
 <text x="638" y="78" class="body" fill="#656a6f">Total, difficulty, ranking, and every language used</text>
-<text x="638" y="122" class="mono" fill="#656a6f">Statistics are being refreshed</text>
+<text x="638" y="119" class="mono" fill="#656a6f">EASY</text>
+<rect x="638" y="132" width="252" height="12" rx="6" fill="#dfd8cb"/><rect x="638" y="132" width="189.2" height="12" rx="6" fill="#459a8e"/>
+<text x="913" y="143" class="body" fill="#181b1f">313</text>
+<text x="638" y="172" class="mono" fill="#656a6f">MEDIUM</text>
+<rect x="638" y="185" width="252" height="12" rx="6" fill="#dfd8cb"/><rect x="638" y="185" width="252.0" height="12" rx="6" fill="#b68231"/>
+<text x="913" y="196" class="body" fill="#181b1f">417</text>
+<text x="638" y="225" class="mono" fill="#656a6f">HARD</text>
+<rect x="638" y="238" width="252" height="12" rx="6" fill="#dfd8cb"/><rect x="638" y="238" width="45.9" height="12" rx="6" fill="#566f9a"/>
+<text x="913" y="249" class="body" fill="#181b1f">76</text>
+<text x="638" y="288" class="mono" fill="#656a6f">LANGUAGES USED</text>
+<rect x="648.0" y="310" width="79.8" height="29" rx="14.5" fill="#e9e3d7" stroke="#d2c9b8"/><text x="687.9" y="329" text-anchor="middle" class="mono chip">C++ 716</text><rect x="737.8" y="310" width="87.2" height="29" rx="14.5" fill="#e9e3d7" stroke="#d2c9b8"/><text x="781.4" y="329" text-anchor="middle" class="mono chip">MySQL 47</text><rect x="835.0" y="310" width="124.2" height="29" rx="14.5" fill="#e9e3d7" stroke="#d2c9b8"/><text x="897.1" y="329" text-anchor="middle" class="mono chip">JavaScript 30</text><rect x="969.2" y="310" width="94.6" height="29" rx="14.5" fill="#e9e3d7" stroke="#d2c9b8"/><text x="1016.5" y="329" text-anchor="middle" class="mono chip">Pandas 15</text>
 </svg>

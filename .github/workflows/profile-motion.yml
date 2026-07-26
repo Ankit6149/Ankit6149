@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - profile-motion-replacement-v6
     paths:
       - tools/generate_profile_motion.py
       - .github/workflows/profile-motion.yml
@@ -29,25 +28,26 @@ jobs:
           python-version: "3.12"
 
       - name: Install rendering dependencies
-        run: pip install pillow numpy opencv-python-headless
+        run: pip install pillow numpy
 
       - name: Fetch ASCILINE
         run: git clone --depth 1 https://github.com/YusufB5/ASCILINE.git .asciline
 
-      - name: Render cinematic profile sequence
+      - name: Render theme-aware profile films
         run: |
           python tools/generate_profile_motion.py \
             --asciline .asciline \
-            --output assets/ankit-cinematic-ascii.gif
+            --light-output assets/ankit-cinematic-ascii-light.gif \
+            --dark-output assets/ankit-cinematic-ascii-dark.gif
 
-      - name: Commit generated animation
+      - name: Commit generated animations
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/ankit-cinematic-ascii.gif
+          git add assets/ankit-cinematic-ascii-light.gif assets/ankit-cinematic-ascii-dark.gif
           if git diff --cached --quiet; then
-            echo "Animation is already current."
+            echo "Animations are already current."
           else
-            git commit -m "Render personal cinematic profile animation [skip ci]"
+            git commit -m "Render theme-aware profile animations [skip ci]"
             git push
           fi

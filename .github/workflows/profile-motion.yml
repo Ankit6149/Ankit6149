@@ -29,7 +29,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install rendering dependencies
-        run: pip install pillow numpy
+        run: pip install pillow numpy opencv-python-headless
 
       - name: Fetch ASCILINE
         run: git clone --depth 1 https://github.com/YusufB5/ASCILINE.git .asciline

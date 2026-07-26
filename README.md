@@ -1,6 +1,6 @@
-<p align="center">
+<!-- <p align="center">
   <img src="assets/ankit-cinematic.svg" width="100%" alt="Cinematic profile sequence introducing Ankit Bhardwaj" />
-</p>
+</p> -->
 
 <p align="center">
   <strong>Software Engineer at Wyrd Media Labs</strong>, working across full-stack systems, automation, and applied AI—with an Instrumentation &amp; Control background and published research in EEG-based deep learning.

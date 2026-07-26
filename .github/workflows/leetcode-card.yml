@@ -1,0 +1,58 @@
+name: Refresh LeetCode card
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - tools/generate_leetcode_card.py
+      - .github/workflows/leetcode-card.yml
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh custom LeetCode card
+        shell: bash
+        run: |
+          refreshed=false
+          for attempt in 1 2 3; do
+            if python tools/generate_leetcode_card.py \
+              --username ankit_bh_ \
+              --output assets/leetcode-card.svg; then
+              refreshed=true
+              break
+            fi
+            sleep 10
+          done
+
+          if [ "$refreshed" != "true" ]; then
+            echo "LeetCode was unavailable. Keeping the last generated card."
+          fi
+
+      - name: Commit refreshed statistics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/leetcode-card.svg
+          if git diff --cached --quiet; then
+            echo "LeetCode card is already current."
+          else
+            git commit -m "Refresh custom LeetCode profile card [skip ci]"
+            git push
+          fi

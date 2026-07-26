@@ -1,8 +1,7 @@
-"""Generate the animated ASCII signal-core used by the profile README.
+"""Render the cinematic typographic motion used by Ankit's profile README.
 
-The moving object is an original animation. Its character rendering uses
-ASCILINE's published AsciiMapper palette and grayscale-to-character mapping.
-ASCILINE: https://github.com/YusufB5/ASCILINE
+The underlying motion is original. The final frames use ASCILINE's published
+character palette and grayscale-to-character mapping.
 """
 
 from __future__ import annotations
@@ -10,24 +9,30 @@ from __future__ import annotations
 import argparse
 import importlib.util
 import math
+import random
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-WIDTH = 960
-HEIGHT = 280
-FPS = 10
-SECONDS = 6
-FRAME_COUNT = FPS * SECONDS
+WIDTH = 900
+HEIGHT = 375
+SOURCE_WIDTH = 360
+SOURCE_HEIGHT = 150
+COLUMNS = 90
+ROWS = 37
+CELL_WIDTH = WIDTH // COLUMNS
+CELL_HEIGHT = HEIGHT // ROWS
+FPS = 8
+DURATION = 10
+FRAME_COUNT = FPS * DURATION
 
-BACKGROUND = (9, 10, 11)
-PANEL = (14, 15, 16)
-CREAM = (235, 229, 216)
-MUTED = (151, 151, 145)
-BRONZE = (204, 177, 128)
-TEAL = (103, 200, 192)
-GRID = (35, 37, 39)
+BACKGROUND = (4, 6, 10)
+IVORY = (239, 234, 222)
+TEAL = (82, 222, 205)
+BLUE = (103, 160, 235)
+GOLD = (233, 185, 88)
+MUTED = (135, 146, 158)
 
 
 def load_font(size: int, *, bold: bool = False, mono: bool = False) -> ImageFont.FreeTypeFont:
@@ -54,11 +59,11 @@ def load_font(size: int, *, bold: bool = False, mono: bool = False) -> ImageFont
     return ImageFont.load_default()
 
 
-NAME_FONT = load_font(50, bold=True)
-ROLE_FONT = load_font(14, mono=True)
-META_FONT = load_font(15, mono=True)
-TINY_FONT = load_font(12, mono=True)
-ASCII_FONT = load_font(9, mono=True, bold=True)
+ASCII_FONT = load_font(CELL_HEIGHT + 1, mono=True, bold=True)
+TITLE_FONT = load_font(36, bold=True)
+SUBTITLE_FONT = load_font(15)
+LABEL_FONT = load_font(14, mono=True, bold=True)
+METRIC_FONT = load_font(40, mono=True, bold=True)
 
 
 def load_asciline_palette(asciline_dir: Path) -> list[str]:
@@ -66,9 +71,9 @@ def load_asciline_palette(asciline_dir: Path) -> list[str]:
     if not module_path.exists():
         raise FileNotFoundError(f"ASCILINE mapper not found: {module_path}")
 
-    spec = importlib.util.spec_from_file_location("asciline_ascii_mapper", module_path)
+    spec = importlib.util.spec_from_file_location("asciline_mapper", module_path)
     if spec is None or spec.loader is None:
-        raise RuntimeError("Unable to load ASCILINE AsciiMapper")
+        raise RuntimeError("Unable to load ASCILINE mapper")
 
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -76,298 +81,394 @@ def load_asciline_palette(asciline_dir: Path) -> list[str]:
     return [str(character) for character in mapper._lut]
 
 
-def rotation_y(angle: float) -> np.ndarray:
-    cosine, sine = math.cos(angle), math.sin(angle)
-    return np.array([[cosine, 0, sine], [0, 1, 0], [-sine, 0, cosine]], dtype=float)
+def smoothstep(value: float) -> float:
+    value = max(0.0, min(1.0, value))
+    return value * value * (3.0 - 2.0 * value)
 
 
-def rotation_x(angle: float) -> np.ndarray:
-    cosine, sine = math.cos(angle), math.sin(angle)
-    return np.array([[1, 0, 0], [0, cosine, -sine], [0, sine, cosine]], dtype=float)
+def alpha_window(time: float, start: float, end: float, fade: float = 0.6) -> float:
+    if time < start or time > end:
+        return 0.0
+    return min(
+        smoothstep((time - start) / fade),
+        smoothstep((end - time) / fade),
+        1.0,
+    )
 
 
-def create_sphere_geometry() -> tuple[np.ndarray, list[tuple[int, int]]]:
-    random = np.random.default_rng(6149)
-    points: list[np.ndarray] = []
+def glow_line(
+    layer: Image.Image,
+    points: list[tuple[float, float]],
+    color: tuple[int, int, int],
+    *,
+    width: int = 1,
+    blur: int = 5,
+    alpha: int = 255,
+) -> None:
+    sharp = Image.new("RGBA", layer.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(sharp)
+    draw.line(points, fill=color + (alpha,), width=width, joint="curve")
+    layer.alpha_composite(sharp.filter(ImageFilter.GaussianBlur(blur)))
+    layer.alpha_composite(sharp)
 
-    for _ in range(112):
-        vertical = random.uniform(-1, 1)
-        theta = random.uniform(0, 2 * math.pi)
-        radius = math.sqrt(1 - vertical * vertical)
-        points.append(
-            np.array(
-                [radius * math.cos(theta), vertical, radius * math.sin(theta)],
-                dtype=float,
-            )
+
+def project(
+    point: tuple[float, float, float],
+    rotate_y: float,
+    rotate_x: float,
+    radius: float,
+    center_x: float,
+    center_y: float,
+) -> tuple[float, float, float]:
+    x, y, z = point
+    cosine_y, sine_y = math.cos(rotate_y), math.sin(rotate_y)
+    cosine_x, sine_x = math.cos(rotate_x), math.sin(rotate_x)
+
+    x, z = x * cosine_y + z * sine_y, -x * sine_y + z * cosine_y
+    y, z = y * cosine_x - z * sine_x, y * sine_x + z * cosine_x
+    perspective = 1.0 / (2.15 - z * 0.55)
+    return (
+        center_x + x * radius * perspective,
+        center_y + y * radius * perspective,
+        z,
+    )
+
+
+random.seed(6149)
+SPHERE_POINTS: list[tuple[float, float, float]] = []
+for _ in range(480):
+    vertical = random.uniform(-1.0, 1.0)
+    theta = random.uniform(0.0, math.tau)
+    horizontal = math.sqrt(max(0.0, 1.0 - vertical * vertical))
+    SPHERE_POINTS.append(
+        (horizontal * math.cos(theta), vertical, horizontal * math.sin(theta))
+    )
+
+STARS = [
+    (
+        random.uniform(0.0, SOURCE_WIDTH),
+        random.uniform(0.0, SOURCE_HEIGHT),
+        random.uniform(0.2, 1.0),
+    )
+    for _ in range(80)
+]
+
+
+def draw_sculpture(
+    layer: Image.Image,
+    time: float,
+    center_x: float,
+    center_y: float,
+    radius: float,
+    alpha: int,
+) -> None:
+    draw = ImageDraw.Draw(layer)
+
+    for index, point in enumerate(SPHERE_POINTS):
+        x, y, depth = project(
+            point,
+            time * 0.9,
+            0.28 + math.sin(time * 0.45) * 0.16,
+            radius,
+            center_x,
+            center_y,
+        )
+        strength = (depth + 1.0) / 2.0
+        color = TEAL if index % 5 else BLUE
+        point_alpha = int(alpha * (0.12 + 0.78 * strength))
+        point_radius = 0.4 + strength
+        draw.ellipse(
+            (
+                x - point_radius,
+                y - point_radius,
+                x + point_radius,
+                y + point_radius,
+            ),
+            fill=color + (point_alpha,),
         )
 
-    point_array = np.array(points)
-    edges: set[tuple[int, int]] = set()
-    for index, point in enumerate(point_array):
-        distances = np.sum((point_array - point) ** 2, axis=1)
-        for neighbour in np.argsort(distances)[1:5]:
-            first, second = sorted((index, int(neighbour)))
-            edges.add((first, second))
+    for ring_index, tilt in enumerate((0.10, 0.62, -0.48)):
+        ring: list[tuple[float, float]] = []
+        for step in range(90):
+            angle = step / 89 * math.tau
+            point = (
+                math.cos(angle) * 1.28,
+                math.sin(angle) * math.cos(tilt) * 1.28,
+                math.sin(angle) * math.sin(tilt) * 1.28,
+            )
+            x, y, _ = project(
+                point,
+                time * (0.35 + ring_index * 0.09),
+                0.05,
+                radius,
+                center_x,
+                center_y,
+            )
+            ring.append((x, y))
 
-    return point_array, list(edges)
+        glow_line(
+            layer,
+            ring,
+            GOLD if ring_index == 1 else BLUE,
+            blur=4,
+            alpha=int(alpha * (0.72 if ring_index == 1 else 0.38)),
+        )
+
+    nucleus = Image.new("RGBA", layer.size, (0, 0, 0, 0))
+    nucleus_draw = ImageDraw.Draw(nucleus)
+    nucleus_radius = max(3, int(radius * 0.07))
+    nucleus_draw.ellipse(
+        (
+            center_x - nucleus_radius,
+            center_y - nucleus_radius,
+            center_x + nucleus_radius,
+            center_y + nucleus_radius,
+        ),
+        fill=IVORY + (alpha,),
+    )
+    layer.alpha_composite(nucleus.filter(ImageFilter.GaussianBlur(8)))
+    layer.alpha_composite(nucleus)
 
 
-SPHERE_POINTS, SPHERE_EDGES = create_sphere_geometry()
+def draw_software_space(layer: Image.Image, time: float, alpha: int) -> None:
+    draw = ImageDraw.Draw(layer)
+    horizon_x, horizon_y = 308, 75
+
+    for lane in range(-5, 6):
+        start_x = horizon_x + lane * 10
+        end_x = 12 + (lane + 5) * 34
+        glow_line(
+            layer,
+            [(start_x, horizon_y), (end_x, SOURCE_HEIGHT + 10)],
+            BLUE,
+            blur=2,
+            alpha=int(alpha * 0.32),
+        )
+
+    for depth_index in range(9):
+        depth = (time * 0.65 + depth_index / 9) % 1.0
+        y = horizon_y + depth**1.8 * (SOURCE_HEIGHT - horizon_y)
+        half_width = 12 + depth * 180
+        glow_line(
+            layer,
+            [(horizon_x - half_width, y), (horizon_x + half_width, y)],
+            TEAL,
+            blur=2,
+            alpha=int(alpha * (0.14 + 0.45 * depth)),
+        )
+
+    for index in range(4):
+        phase = (time * 0.35 + index * 0.27) % 1.0
+        scale = 0.35 + phase * 1.3
+        center_x = horizon_x + math.sin(index * 1.7) * 72 * scale
+        center_y = horizon_y + phase * 65
+        width = 30 * scale
+        height = 14 * scale
+        draw.rounded_rectangle(
+            (
+                center_x - width,
+                center_y - height,
+                center_x + width,
+                center_y + height,
+            ),
+            radius=3,
+            outline=IVORY + (int(alpha * (0.14 + phase * 0.35)),),
+            width=1,
+        )
+        draw.line(
+            (
+                center_x - width + 4,
+                center_y - 4,
+                center_x + width - 7,
+                center_y - 4,
+            ),
+            fill=TEAL + (int(alpha * 0.38),),
+        )
+        draw.line(
+            (
+                center_x - width + 4,
+                center_y + 3,
+                center_x + width - 14,
+                center_y + 3,
+            ),
+            fill=BLUE + (int(alpha * 0.28),),
+        )
 
 
-def render_ascii_object(source: Image.Image, palette: list[str]) -> Image.Image:
-    columns = 66
-    rows = 28
-    small = source.resize((columns, rows), Image.Resampling.BILINEAR)
-    rgb = np.asarray(small, dtype=np.uint8)
-    grayscale = np.asarray(small.convert("L"), dtype=np.uint8)
+def draw_research_space(layer: Image.Image, time: float, alpha: int) -> None:
+    waveform: list[tuple[float, float]] = []
+    for x in range(12, SOURCE_WIDTH - 12, 2):
+        baseline = math.sin(x / 18 + time * 1.8) * 5
+        spike_one = math.exp(-((x - 112) / 14) ** 2) * math.sin((x - 112) * 0.8) * 23
+        spike_two = math.exp(-((x - 248) / 19) ** 2) * math.sin((x - 248) * 0.62) * 17
+        waveform.append((x, 77 + baseline + spike_one + spike_two))
+    glow_line(layer, waveform, TEAL, width=2, blur=5, alpha=alpha)
 
-    # This is the same grayscale-to-character relationship used by ASCILINE.
-    indices = (grayscale.astype(np.uint16) * (len(palette) - 1)) // 255
+    draw = ImageDraw.Draw(layer)
+    for row in range(6):
+        for column in range(14):
+            x = 28 + column * 22
+            y = 100 + row * 6
+            activation = 0.15 + 0.85 * abs(
+                math.sin(time * 1.9 + row * 0.58 + column * 0.37)
+            )
+            color = GOLD if (row + column) % 5 == 0 else BLUE
+            draw.rounded_rectangle(
+                (x, y, x + 14, y + 3),
+                radius=1,
+                fill=color + (int(alpha * activation * 0.72),),
+            )
 
-    canvas = Image.new("RGB", source.size, PANEL)
+
+def source_frame(time: float) -> Image.Image:
+    image = Image.new("RGBA", (SOURCE_WIDTH, SOURCE_HEIGHT), BACKGROUND + (255,))
+    draw = ImageDraw.Draw(image)
+
+    fog = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    fog_draw = ImageDraw.Draw(fog)
+    sweep_x = -80 + (SOURCE_WIDTH + 160) * (time / DURATION)
+    fog_draw.ellipse(
+        (sweep_x - 90, -40, sweep_x + 90, SOURCE_HEIGHT + 40),
+        fill=(65, 115, 145, 45),
+    )
+    image.alpha_composite(fog.filter(ImageFilter.GaussianBlur(34)))
+
+    for x, y, strength in STARS:
+        moved_x = (x - time * strength * 5) % SOURCE_WIDTH
+        star_alpha = int(30 + 95 * strength)
+        draw.ellipse(
+            (moved_x, y, moved_x + 1 + strength, y + 1 + strength),
+            fill=IVORY + (star_alpha,),
+        )
+
+    identity_alpha = int(255 * alpha_window(time, 0.0, 3.2))
+    software_alpha = int(255 * alpha_window(time, 2.3, 6.1))
+    research_alpha = int(255 * alpha_window(time, 5.2, 9.0))
+
+    if identity_alpha:
+        center_x = 63 + smoothstep(time / 2.6) * 94
+        draw_sculpture(image, time, center_x, 75, 89, identity_alpha)
+
+    if software_alpha:
+        draw_software_space(image, time, software_alpha)
+        center_x = 140 + smoothstep((time - 2.3) / 3.2) * 140
+        draw_sculpture(image, time, center_x, 77, 65, software_alpha)
+
+    if research_alpha:
+        draw_research_space(image, time, research_alpha)
+        center_x = 266 - math.sin(time * 0.6) * 22
+        draw_sculpture(image, time, center_x, 68, 47, int(research_alpha * 0.86))
+
+    ending_alpha = int(255 * smoothstep((time - 8.55) / 0.75))
+    if ending_alpha:
+        veil = Image.new("RGBA", image.size, BACKGROUND + (int(ending_alpha * 0.78),))
+        image.alpha_composite(veil)
+        draw_sculpture(image, time, 180, 74, 124, ending_alpha)
+
+    return image.convert("RGB")
+
+
+def render_typographic_frame(source: Image.Image, palette: list[str]) -> Image.Image:
+    small = source.resize((COLUMNS, ROWS), Image.Resampling.BILINEAR)
+    rgb = np.asarray(small, dtype=np.float32)
+    luminance = 0.2126 * rgb[:, :, 0] + 0.7152 * rgb[:, :, 1] + 0.0722 * rgb[:, :, 2]
+
+    canvas = Image.new("RGB", (WIDTH, HEIGHT), BACKGROUND)
     draw = ImageDraw.Draw(canvas)
-    cell_width = source.width / columns
-    cell_height = source.height / rows
+    palette_length = len(palette) - 1
 
-    for row in range(rows):
-        for column in range(columns):
-            character = palette[int(indices[row, column])]
-            if character == " ":
+    for row in range(ROWS):
+        y = row * CELL_HEIGHT - 1
+        for column in range(COLUMNS):
+            brightness = luminance[row, column]
+            if brightness < 11:
                 continue
 
-            red, green, blue = [int(value) for value in rgb[row, column]]
-            if max(red, green, blue) < 18:
-                continue
-
+            palette_index = int((brightness / 255) ** 0.62 * palette_length)
+            palette_index = max(1, min(palette_length, palette_index))
+            character = palette[palette_index]
+            red, green, blue = rgb[row, column]
+            boost = 0.72 + min(0.5, brightness / 210)
+            color = tuple(
+                int(min(255, channel * boost + 10))
+                for channel in (red, green, blue)
+            )
             draw.text(
-                (column * cell_width, row * cell_height - 1),
+                (column * CELL_WIDTH, y),
                 character,
                 font=ASCII_FONT,
-                fill=(red, green, blue),
+                fill=color,
             )
 
     return canvas
 
 
-def draw_motion_object(frame_index: int, palette: list[str]) -> Image.Image:
-    progress = frame_index / FRAME_COUNT
-    angle = 2 * math.pi * progress
-
-    object_width = 440
-    object_height = 248
-    object_image = Image.new("RGB", (object_width, object_height), (0, 0, 0))
-    draw = ImageDraw.Draw(object_image)
-
-    center_x = 220
-    center_y = 124
-    scale = 136
-
-    draw.ellipse(
-        (center_x - 107, center_y - 107, center_x + 107, center_y + 107),
-        outline=(29, 35, 36),
-        width=2,
-    )
-    for radius in (68, 96):
-        draw.ellipse(
-            (center_x - radius, center_y - radius, center_x + radius, center_y + radius),
-            outline=(21, 27, 28),
-            width=1,
-        )
-
-    rotation = rotation_y(angle * 1.2) @ rotation_x(0.42 + 0.12 * math.sin(angle))
-    transformed = SPHERE_POINTS @ rotation.T
-    depth = transformed[:, 2]
-    perspective = 1.0 / (1.55 - 0.30 * depth)
-    projected_x = center_x + transformed[:, 0] * scale * perspective
-    projected_y = center_y + transformed[:, 1] * scale * perspective
-
-    for first, second in SPHERE_EDGES:
-        average_depth = (depth[first] + depth[second]) / 2
-        strength = max(0.12, min(1.0, (average_depth + 1.0) / 2.0))
-        color = tuple(
-            int((1 - strength) * low + strength * high)
-            for low, high in zip((43, 55, 56), TEAL)
-        )
-        draw.line(
-            (projected_x[first], projected_y[first], projected_x[second], projected_y[second]),
-            fill=color,
-            width=2,
-        )
-
-    for index in range(len(SPHERE_POINTS)):
-        strength = max(0.15, min(1.0, (depth[index] + 1.0) / 2.0))
-        radius = 2 + int(strength * 3.2)
-        color = tuple(
-            int((1 - strength) * low + strength * high)
-            for low, high in zip((72, 65, 54), BRONZE)
-        )
-        draw.ellipse(
-            (
-                projected_x[index] - radius,
-                projected_y[index] - radius,
-                projected_x[index] + radius,
-                projected_y[index] + radius,
-            ),
-            fill=color,
-        )
-
-    waveform: list[tuple[float, float]] = []
-    for coordinate in np.linspace(-1, 1, 120):
-        vertical = 0.22 * math.sin(3.2 * math.pi * coordinate + angle * 2.4)
-        depth_value = 0.42 * math.cos(1.4 * math.pi * coordinate + angle)
-        vector = np.array([coordinate, vertical, depth_value]) @ rotation.T
-        perspective_value = 1.0 / (1.55 - 0.30 * vector[2])
-        waveform.append(
-            (
-                center_x + vector[0] * scale * perspective_value,
-                center_y + vector[1] * scale * perspective_value,
-            )
-        )
-    draw.line(waveform, fill=(245, 215, 160), width=3)
-
-    orbit_angle = angle * 1.65
-    orbit: list[tuple[float, float]] = []
-    for coordinate in np.linspace(0, 2 * math.pi, 160):
-        vector = np.array(
-            [1.22 * math.cos(coordinate), 0.43 * math.sin(coordinate), 0.22 * math.sin(coordinate)]
-        )
-        vector = vector @ rotation_x(-0.45).T @ rotation_y(orbit_angle * 0.14).T
-        orbit.append((center_x + vector[0] * scale, center_y + vector[1] * scale))
-    draw.line(orbit, fill=(190, 164, 119), width=2)
-
-    node = np.array(
-        [1.22 * math.cos(orbit_angle), 0.43 * math.sin(orbit_angle), 0.22 * math.sin(orbit_angle)]
-    )
-    node = node @ rotation_x(-0.45).T @ rotation_y(orbit_angle * 0.14).T
-    node_x = center_x + node[0] * scale
-    node_y = center_y + node[1] * scale
-    draw.polygon(
-        [(node_x, node_y - 9), (node_x + 9, node_y), (node_x, node_y + 9), (node_x - 9, node_y)],
-        fill=CREAM,
-    )
-
-    core_radius = 22 + 7 * (0.5 + 0.5 * math.sin(angle * 2.0))
-    draw.ellipse(
-        (
-            center_x - core_radius,
-            center_y - core_radius,
-            center_x + core_radius,
-            center_y + core_radius,
-        ),
-        outline=(235, 207, 154),
-        width=3,
-    )
-
-    hexagon = []
-    for index in range(6):
-        hexagon_angle = angle * 0.65 + index * math.pi / 3
-        hexagon.append(
-            (
-                center_x + math.cos(hexagon_angle) * 34,
-                center_y + math.sin(hexagon_angle) * 34,
-            )
-        )
-    draw.line(hexagon + [hexagon[0]], fill=(118, 224, 214), width=2)
-
-    for index in range(16):
-        phase = (progress * 1.4 + index / 16) % 1.0
-        particle_angle = phase * 2 * math.pi
-        particle_radius = 116 + 8 * math.sin(particle_angle * 3 + index)
-        particle_x = center_x + math.cos(particle_angle) * particle_radius
-        particle_y = center_y + math.sin(particle_angle * 1.3) * 54
-        radius = 1 + (index % 3 == 0)
-        draw.ellipse(
-            (
-                particle_x - radius,
-                particle_y - radius,
-                particle_x + radius,
-                particle_y + radius,
-            ),
-            fill=(74, 120, 117),
-        )
-
-    glow = object_image.filter(ImageFilter.GaussianBlur(7))
-    object_image = Image.blend(glow, object_image, 0.88)
-    object_image = ImageEnhance.Brightness(object_image).enhance(1.45)
-    return render_ascii_object(object_image, palette)
-
-
-def draw_frame(frame_index: int, palette: list[str]) -> Image.Image:
-    progress = frame_index / FRAME_COUNT
-    image = Image.new("RGB", (WIDTH, HEIGHT), BACKGROUND)
+def add_overlay(frame: Image.Image, time: float) -> Image.Image:
+    image = frame.convert("RGBA")
     draw = ImageDraw.Draw(image)
 
-    draw.rounded_rectangle(
-        (10, 10, WIDTH - 10, HEIGHT - 10),
-        radius=20,
-        fill=PANEL,
-        outline=(43, 43, 40),
-        width=1,
-    )
-
-    for x_coordinate in range(30, WIDTH - 20, 36):
-        draw.line((x_coordinate, 22, x_coordinate, HEIGHT - 22), fill=GRID, width=1)
-    for y_coordinate in range(22, HEIGHT - 20, 36):
-        draw.line((22, y_coordinate, WIDTH - 22, y_coordinate), fill=GRID, width=1)
-
-    pulse = 0.65 + 0.35 * math.sin(2 * math.pi * progress)
-    pulse_radius = 3 + int(pulse * 2)
-    draw.ellipse(
-        (42 - pulse_radius, 39 - pulse_radius, 42 + pulse_radius, 39 + pulse_radius),
-        fill=BRONZE,
-    )
-    draw.text((58, 28), "ANKIT / SIGNAL ONLINE", font=TINY_FONT, fill=MUTED)
-
-    draw.text((40, 77), "ANKIT", font=NAME_FONT, fill=CREAM)
-    draw.text((40, 126), "BHARDWAJ", font=NAME_FONT, fill=CREAM)
-    draw.text(
-        (42, 188),
-        "FULL-STACK ENGINEERING  /  AUTOMATION  /  APPLIED AI",
-        font=ROLE_FONT,
-        fill=BRONZE,
-    )
-    draw.text(
-        (42, 218),
-        "Software Engineer at Wyrd Media Labs  ·  NSUT '25",
-        font=META_FONT,
-        fill=MUTED,
-    )
-    draw.text((42, 240), "Published researcher · Springer LNNS", font=META_FONT, fill=MUTED)
-
-    path_y = 263
-    labels = [("INSTRUMENTATION", 42), ("SOFTWARE", 190), ("INTELLIGENCE", 318)]
-    for label, x_coordinate in labels:
-        draw.text((x_coordinate, path_y - 9), label, font=TINY_FONT, fill=MUTED)
-    draw.line((151, path_y, 180, path_y), fill=(77, 75, 69), width=1)
-    draw.line((266, path_y, 308, path_y), fill=(77, 75, 69), width=1)
-
-    travel = (frame_index * 6) % 210
-    if travel < 29:
-        travelling_x = 151 + travel
-    elif travel < 105:
-        travelling_x = 190 + (travel - 29)
-    else:
-        travelling_x = 318 + (travel - 105)
-    if travelling_x < 423:
-        draw.ellipse(
-            (travelling_x - 3, path_y - 3, travelling_x + 3, path_y + 3),
-            fill=TEAL,
+    identity_alpha = int(255 * alpha_window(time, 0.25, 3.05, 0.55))
+    if identity_alpha:
+        draw.text((518, 112), "ANKIT BHARDWAJ", font=TITLE_FONT, fill=IVORY + (identity_alpha,))
+        draw.text((521, 164), "SOFTWARE ENGINEER", font=LABEL_FONT, fill=TEAL + (identity_alpha,))
+        draw.text(
+            (521, 194),
+            "Applied AI  •  Automation  •  Research",
+            font=SUBTITLE_FONT,
+            fill=MUTED + (identity_alpha,),
         )
 
-    image.paste(draw_motion_object(frame_index, palette), (505, 18))
-    draw.text((755, 252), "ASCII SIGNAL CORE", font=TINY_FONT, fill=(102, 104, 101))
-    return image
+    software_alpha = int(255 * alpha_window(time, 2.7, 5.9, 0.45))
+    if software_alpha:
+        draw.text((54, 57), "SYSTEMS", font=LABEL_FONT, fill=IVORY + (software_alpha,))
+        draw.text((54, 84), "AUTOMATION", font=LABEL_FONT, fill=TEAL + (software_alpha,))
+        draw.text((54, 111), "INTERFACES", font=LABEL_FONT, fill=BLUE + (software_alpha,))
+
+    research_alpha = int(255 * alpha_window(time, 5.55, 8.75, 0.5))
+    if research_alpha:
+        draw.text((68, 46), "86.82%", font=METRIC_FONT, fill=IVORY + (research_alpha,))
+        draw.text((72, 98), "ACCURACY", font=LABEL_FONT, fill=MUTED + (research_alpha,))
+        draw.text((618, 46), "0.977", font=METRIC_FONT, fill=IVORY + (research_alpha,))
+        draw.text((622, 98), "AUROC", font=LABEL_FONT, fill=MUTED + (research_alpha,))
+
+    ending_alpha = int(255 * smoothstep((time - 8.8) / 0.65))
+    if ending_alpha:
+        draw.rounded_rectangle(
+            (190, 262, 710, 315),
+            radius=15,
+            fill=(7, 9, 13, int(ending_alpha * 0.82)),
+            outline=TEAL + (int(ending_alpha * 0.55),),
+            width=2,
+        )
+        draw.text(
+            (450, 288),
+            "ENGINEERING WITH DEPTH, CLARITY AND INTENT",
+            font=LABEL_FONT,
+            fill=IVORY + (ending_alpha,),
+            anchor="mm",
+        )
+
+    draw.rectangle((0, 0, WIDTH, 6), fill=(0, 0, 0, 255))
+    draw.rectangle((0, HEIGHT - 6, WIDTH, HEIGHT), fill=(0, 0, 0, 255))
+    return image.convert("RGB")
 
 
-def generate(output: Path, palette: list[str]) -> None:
-    output.parent.mkdir(parents=True, exist_ok=True)
-    frames = [draw_frame(index, palette).quantize(colors=64) for index in range(FRAME_COUNT)]
+def render(output_path: Path, palette: list[str]) -> None:
+    frames: list[Image.Image] = []
+    for frame_index in range(FRAME_COUNT):
+        time = frame_index / FPS
+        frame = render_typographic_frame(source_frame(time), palette)
+        frame = add_overlay(frame, time)
+        frames.append(
+            frame.quantize(colors=56, method=Image.Quantize.MEDIANCUT)
+        )
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     frames[0].save(
-        output,
+        output_path,
         save_all=True,
         append_images=frames[1:],
-        duration=int(1000 / FPS),
+        duration=round(1000 / FPS),
         loop=0,
         optimize=True,
         disposal=2,
@@ -380,5 +481,4 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, required=True)
     arguments = parser.parse_args()
 
-    generate(arguments.output, load_asciline_palette(arguments.asciline))
-    print(f"Generated {arguments.output} ({arguments.output.stat().st_size} bytes)")
+    render(arguments.output, load_asciline_palette(arguments.asciline))

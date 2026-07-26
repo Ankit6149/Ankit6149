@@ -3,7 +3,7 @@ name: Render profile motion
 on:
   push:
     branches:
-      - profile-ascii-motion-rebuild
+      - profile-cinematic-showcase-v5
     paths:
       - tools/generate_profile_motion.py
       - .github/workflows/profile-motion.yml
@@ -33,20 +33,20 @@ jobs:
       - name: Fetch ASCILINE
         run: git clone --depth 1 https://github.com/YusufB5/ASCILINE.git .asciline
 
-      - name: Generate animated ASCII signal core
+      - name: Render cinematic profile sequence
         run: |
           python tools/generate_profile_motion.py \
             --asciline .asciline \
-            --output assets/ankit-signal-core.gif
+            --output assets/ankit-cinematic-ascii.gif
 
       - name: Commit generated animation
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/ankit-signal-core.gif
+          git add assets/ankit-cinematic-ascii.gif
           if git diff --cached --quiet; then
             echo "Animation is already current."
           else
-            git commit -m "Render animated ASCII profile signal core"
+            git commit -m "Render cinematic profile animation [skip ci]"
             git push
           fi

@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="assets/ankit-cinematic-ascii.gif" width="100%" alt="A seamless ASCII motion film introducing Ankit Bhardwaj" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ankit-cinematic-ascii-dark.gif" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/ankit-cinematic-ascii-light.gif" />
+    <img src="assets/ankit-cinematic-ascii-light.gif" width="100%" alt="A seamless ASCII motion film about noticing patterns, connecting ideas, and shaping systems" />
+  </picture>
 </p>
 
 <p align="center">

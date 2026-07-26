@@ -1,14 +1,13 @@
 """Render seamless light and dark ASCII profile films.
 
-The motion is designed as a normal high-contrast video first. Typography is
-embedded into those source frames and the complete frame is then converted to
-ASCII, keeping the words part of the same visual system.
+The animation is composed as a clean monochrome video first. The phrases are
+rendered into those source frames, then the complete frame is mapped through
+an ASCILINE-style density palette so the words and motion share one texture.
 """
 
 from __future__ import annotations
 
 import argparse
-import importlib.util
 import math
 from pathlib import Path
 
@@ -21,6 +20,7 @@ COLUMNS, ROWS = 96, 36
 CELL_WIDTH, CELL_HEIGHT = WIDTH // COLUMNS, HEIGHT // ROWS
 FPS = 8
 FRAME_COUNT = 72
+PALETTE = list(" .,:;irsXA253hMHGS#9B&@")
 
 GITHUB_LIGHT = (246, 248, 250)
 GITHUB_DARK = (13, 17, 23)
@@ -31,7 +31,6 @@ DARK_MUTED = (139, 148, 158)
 
 
 def load_font(size: int, *, mono: bool = False, bold: bool = False):
-    names = []
     if mono and bold:
         names = ["DejaVuSansMono-Bold.ttf", "LiberationMono-Bold.ttf"]
     elif mono:
@@ -40,7 +39,6 @@ def load_font(size: int, *, mono: bool = False, bold: bool = False):
         names = ["DejaVuSans-Bold.ttf", "LiberationSans-Bold.ttf"]
     else:
         names = ["DejaVuSans.ttf", "LiberationSans-Regular.ttf"]
-
     roots = [
         Path("/usr/share/fonts/truetype/dejavu"),
         Path("/usr/share/fonts/truetype/liberation2"),
@@ -56,25 +54,6 @@ def load_font(size: int, *, mono: bool = False, bold: bool = False):
 ASCII_FONT = load_font(CELL_HEIGHT + 1, mono=True, bold=True)
 PHRASE_FONT = load_font(21, bold=True)
 SMALL_FONT = load_font(10, mono=True)
-FALLBACK_PALETTE = list(" .,:;irsXA253hMHGS#9B&@")
-
-
-def load_asciline_palette(directory: Path) -> list[str]:
-    module_path = directory / "ascii_video_player2.py"
-    if not module_path.exists():
-        return FALLBACK_PALETTE
-    spec = importlib.util.spec_from_file_location("asciline_mapper", module_path)
-    if spec is None or spec.loader is None:
-        return FALLBACK_PALETTE
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    values = [str(character) for character in module.AsciiMapper()._lut]
-    return values or FALLBACK_PALETTE
-
-
-def smooth(value: float) -> float:
-    value = max(0.0, min(1.0, value))
-    return value * value * (3.0 - 2.0 * value)
 
 
 def cyclic_weights(theta: float) -> list[float]:
@@ -87,7 +66,6 @@ def cyclic_weights(theta: float) -> list[float]:
 def amoeba_field(theta: float) -> np.ndarray:
     yy, xx = np.mgrid[0:SOURCE_HEIGHT, 0:SOURCE_WIDTH]
     field = np.zeros((SOURCE_HEIGHT, SOURCE_WIDTH), dtype=np.float32)
-
     blobs = [
         (0.21, 0.26, 58, 37, 0.0),
         (0.63, 0.28, 73, 42, 1.7),
@@ -99,9 +77,9 @@ def amoeba_field(theta: float) -> np.ndarray:
         moving_y = SOURCE_HEIGHT * cy + math.sin(theta * 1.15 + phase) * 20
         distance = ((xx - moving_x) / rx) ** 2 + ((yy - moving_y) / ry) ** 2
         field += np.exp(-distance * 2.1)
-
-    ripple = 0.15 * np.sin(xx / 22.0 + theta) + 0.11 * np.cos(yy / 15.0 - theta * 1.3)
-    return field + ripple
+    field += 0.15 * np.sin(xx / 22.0 + theta)
+    field += 0.11 * np.cos(yy / 15.0 - theta * 1.3)
+    return field
 
 
 def source_frame(theta: float, theme: str) -> Image.Image:
@@ -116,28 +94,25 @@ def source_frame(theta: float, theme: str) -> Image.Image:
     coverage = coverage * coverage * (3.0 - 2.0 * coverage)
 
     bg = np.array(background, dtype=np.float32)
-    fg = np.array(foreground, dtype=np.float32)
-    if light_theme:
-        shape = fg * 0.90
-    else:
-        shape = fg * 0.82
-
-    pixels = bg[None, None, :] * (1.0 - coverage[..., None]) + shape[None, None, :] * coverage[..., None]
+    shape = np.array(foreground, dtype=np.float32) * (0.90 if light_theme else 0.82)
+    pixels = bg[None, None, :] * (1.0 - coverage[..., None])
+    pixels += shape[None, None, :] * coverage[..., None]
     image = Image.fromarray(np.uint8(np.clip(pixels, 0, 255)), "RGB").convert("RGBA")
 
-    # A continuous filament connects the phases and returns to itself.
     filament = Image.new("RGBA", image.size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(filament)
+    filament_draw = ImageDraw.Draw(filament)
     points = []
     for index in range(180):
         progress = index / 179.0
         angle = progress * math.tau * 1.6 + theta
         radius = 14 + progress * 118
-        x = SOURCE_WIDTH / 2 + math.cos(angle + progress * 0.8) * radius * 0.92
-        y = SOURCE_HEIGHT / 2 + math.sin(angle + progress * 0.8) * radius * 0.36
-        points.append((x, y))
-    line_color = muted + (110,)
-    draw.line(points, fill=line_color, width=1, joint="curve")
+        points.append(
+            (
+                SOURCE_WIDTH / 2 + math.cos(angle + progress * 0.8) * radius * 0.92,
+                SOURCE_HEIGHT / 2 + math.sin(angle + progress * 0.8) * radius * 0.36,
+            )
+        )
+    filament_draw.line(points, fill=muted + (115,), width=1, joint="curve")
     image.alpha_composite(filament.filter(ImageFilter.GaussianBlur(3)))
     image.alpha_composite(filament)
 
@@ -145,10 +120,7 @@ def source_frame(theta: float, theme: str) -> Image.Image:
     weights = cyclic_weights(theta)
     phrase_index = max(range(3), key=lambda index: weights[index])
     phrase = phrases[phrase_index]
-    alpha = int(155 + 100 * weights[phrase_index])
 
-    # Establish a quiet contrast zone, then draw the words into the source video.
-    # ASCILINE converts this entire frame, so these are not overlay labels.
     text_layer = Image.new("RGBA", image.size, (0, 0, 0, 0))
     text_draw = ImageDraw.Draw(text_layer)
     bbox = text_draw.textbbox((0, 0), phrase, font=PHRASE_FONT)
@@ -157,42 +129,34 @@ def source_frame(theta: float, theme: str) -> Image.Image:
     text_x = (SOURCE_WIDTH - text_width) / 2
     text_y = (SOURCE_HEIGHT - text_height) / 2 - 4
 
-    sample_x = int(SOURCE_WIDTH / 2)
-    sample_y = int(SOURCE_HEIGHT / 2)
-    local_shape = coverage[sample_y, sample_x] > 0.5
-    if light_theme:
-        text_color = background if local_shape else foreground
-        halo_color = foreground if local_shape else background
-    else:
-        text_color = background if local_shape else foreground
-        halo_color = foreground if local_shape else background
+    local_shape = coverage[SOURCE_HEIGHT // 2, SOURCE_WIDTH // 2] > 0.5
+    text_color = background if local_shape else foreground
+    halo_color = foreground if local_shape else background
 
     halo = Image.new("RGBA", image.size, (0, 0, 0, 0))
     halo_draw = ImageDraw.Draw(halo)
-    pad_x, pad_y = 13, 8
     halo_draw.rounded_rectangle(
-        (text_x - pad_x, text_y - pad_y, text_x + text_width + pad_x, text_y + text_height + pad_y),
+        (text_x - 13, text_y - 8, text_x + text_width + 13, text_y + text_height + 8),
         radius=11,
-        fill=halo_color + (82,),
+        fill=halo_color + (88,),
     )
     image.alpha_composite(halo.filter(ImageFilter.GaussianBlur(9)))
-
-    text_draw.text((text_x, text_y), phrase, font=PHRASE_FONT, fill=text_color + (alpha,))
+    text_draw.text((text_x, text_y), phrase, font=PHRASE_FONT, fill=text_color + (255,))
     image.alpha_composite(text_layer)
 
-    # Small cyclic marker reinforces the endless flow without adding more copy.
-    marker = f"{phrase_index + 1:02d} / 03"
-    marker_draw = ImageDraw.Draw(image)
-    marker_draw.text((14, SOURCE_HEIGHT - 18), marker, font=SMALL_FONT, fill=muted + (170,))
-
+    ImageDraw.Draw(image).text(
+        (14, SOURCE_HEIGHT - 18),
+        f"{phrase_index + 1:02d} / 03",
+        font=SMALL_FONT,
+        fill=muted + (175,),
+    )
     return image.convert("RGB")
 
 
-def render_ascii(source: Image.Image, palette: list[str], theme: str) -> Image.Image:
+def render_ascii(source: Image.Image, theme: str) -> Image.Image:
     light_theme = theme == "light"
     background = GITHUB_LIGHT if light_theme else GITHUB_DARK
     default_ink = LIGHT_INK if light_theme else DARK_INK
-
     small = source.resize((COLUMNS, ROWS), Image.Resampling.BILINEAR)
     pixels = np.asarray(small, dtype=np.float32)
     bg = np.array(background, dtype=np.float32)
@@ -200,8 +164,7 @@ def render_ascii(source: Image.Image, palette: list[str], theme: str) -> Image.I
 
     canvas = Image.new("RGB", (WIDTH, HEIGHT), background)
     draw = ImageDraw.Draw(canvas)
-    highest = len(palette) - 1
-
+    highest = len(PALETTE) - 1
     for row in range(ROWS):
         y = row * CELL_HEIGHT - 1
         for column in range(COLUMNS):
@@ -210,32 +173,27 @@ def render_ascii(source: Image.Image, palette: list[str], theme: str) -> Image.I
                 continue
             palette_index = int((min(strength, 255.0) / 255.0) ** 0.62 * highest)
             palette_index = max(1, min(highest, palette_index))
-
             rgb = pixels[row, column]
             luminance = 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]
             if light_theme:
-                shade = max(24, min(110, int(luminance * 0.45)))
+                shade = max(24, min(112, int(luminance * 0.45)))
             else:
                 shade = max(165, min(248, int(luminance + 75)))
-            color = (shade, shade, shade)
-            if strength > 170:
-                color = default_ink
-
+            color = default_ink if strength > 170 else (shade, shade, shade)
             draw.text(
                 (column * CELL_WIDTH, y),
-                palette[palette_index],
+                PALETTE[palette_index],
                 font=ASCII_FONT,
                 fill=color,
             )
     return canvas
 
 
-def render_theme(palette: list[str], theme: str, output: Path) -> None:
+def render_theme(theme: str, output: Path) -> None:
     frames = []
     for frame_index in range(FRAME_COUNT):
         theta = math.tau * frame_index / FRAME_COUNT
-        frames.append(render_ascii(source_frame(theta, theme), palette, theme))
-
+        frames.append(render_ascii(source_frame(theta, theme), theme))
     output.parent.mkdir(parents=True, exist_ok=True)
     frames[0].save(
         output,
@@ -251,20 +209,12 @@ def render_theme(palette: list[str], theme: str, output: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--asciline", type=Path, required=True)
-    parser.add_argument("--light-output", type=Path)
-    parser.add_argument("--dark-output", type=Path)
-    parser.add_argument("--output", type=Path)
+    parser.add_argument("--asciline", type=Path)
+    parser.add_argument("--light-output", type=Path, required=True)
+    parser.add_argument("--dark-output", type=Path, required=True)
     args = parser.parse_args()
-
-    palette = load_asciline_palette(args.asciline)
-    light_output = args.light_output or args.output
-    if light_output is None:
-        parser.error("--light-output or --output is required")
-    dark_output = args.dark_output or light_output.with_name("ankit-cinematic-ascii-dark.gif")
-
-    render_theme(palette, "light", light_output)
-    render_theme(palette, "dark", dark_output)
+    render_theme("light", args.light_output)
+    render_theme("dark", args.dark_output)
 
 
 if __name__ == "__main__":

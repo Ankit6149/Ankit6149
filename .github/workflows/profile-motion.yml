@@ -1,0 +1,52 @@
+name: Render profile motion
+
+on:
+  push:
+    branches:
+      - profile-ascii-motion-rebuild
+    paths:
+      - tools/generate_profile_motion.py
+      - .github/workflows/profile-motion.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install rendering dependencies
+        run: pip install pillow numpy opencv-python-headless
+
+      - name: Fetch ASCILINE
+        run: git clone --depth 1 https://github.com/YusufB5/ASCILINE.git .asciline
+
+      - name: Generate animated ASCII signal core
+        run: |
+          python tools/generate_profile_motion.py \
+            --asciline .asciline \
+            --output assets/ankit-signal-core.gif
+
+      - name: Commit generated animation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/ankit-signal-core.gif
+          if git diff --cached --quiet; then
+            echo "Animation is already current."
+          else
+            git commit -m "Render animated ASCII profile signal core"
+            git push
+          fi

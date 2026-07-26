@@ -1,2 +1,271 @@
-import base64,zlib
-exec(compile(zlib.decompress(base64.b85decode('c-pNyYjfK;lHd6&P@0-u(xGXQdRXy}QY$-7;v2_F+0NzaTrL(Z!V<?6$>qbg_Sau`10=zRY|qZ6QZxy4HyVw8p#cpBgG(OyJY|dMA;|xpv5b40kY^c7()d0IIfKWBd6CbSarDU3oaJi{@0%p#x$MnjwzxVuJF_(H8ah`z;;EO%DGQ>UM|luOUKnoKQ=C3z(8ltom?d78@$5*mEp}W4q0c<F47nGvO&rC`bsBFtydtg`<0;73EKXNm6fD_Y=q(?Jsi$>7T=3A(OpP(Xc?_Zz%ks2X=0(agli>1g60cG(S#N=XEbuu^11VdYW3iLoxuxEQn*hHI3m=JMZ%xRo=FOICFZGr=Pcsk!Hl3ecoU*J)k}%+zpjv{kFpeLJgyr5HNcU;YBNpT=$e8!&1tB(CY(Y!_xONYcyTi#Q9`FQAJ#e06Kx65JETyGG&Txt+XY3v*;GCHc{HL2B3bH&{TH0VR(6oDyDRbTX0>$FGEZ8J5OxcT~IQLM{nWmL(=_>KkjF;cyPZ-=;MIMA@>&DC1f@%V9&|8xHjvXabRBVzh^D-7C0{Hvcc?o#7@m3&V`tvdMp5*JNAO!Zyk2uOT?dRFY>n|qza(edp%Qc%b+Zhf`Hl7T%t8YIpPflG4AipZODS|o9L_7I*{^RS#mB}u@{k#$c5MMhvJwGpz>AgawMs{$(Dpc78O-Mxh^c@M!v`?3ducz+Gw;vaX_I|2q$LEWa-{D=irzW#!z=3UOKfjz^pJJmkhE`|nz+>bX+V$z;9Gj=_0d_Km#~4~ae>?w36lQ>Kj}A>XnHfO%2a%W|U3)|bhW2T3etrxiy5AS)r`I${2rI7-m}MUQBS^FVSvZr?`s<g^SHHYJ{@XtXhNfvgzXvt)eD@v%tY^W$`4QTy$@WZk7l-~4JmU~Zee%K#776XL*=8J}!Li_8^w9_Yi@<C$0J^DK@ZaDg|HJ$5;>wG%uK>P(3}aY%em_70I3VLdvkgWNW|Po)aEJZ{H1<V8EwD?zDnc)95xk{0MEDc@zk&Cc`F@c|3v3tP^qR(T-eeVRPahl<S$dFx%i#yOyx9S`Lk_NsANauHV=*wyH)DhqKTe4zq;?M;9vMKFPK?wd#4Z#gc9A%b8lpgd0bCRE0Rc3+K^_QU@n_KDOgEayG;a=0EUF!ZRdTB%qRCL54XqcFbRLx7E5ckyLm(IKe)>k%TU&(c4BjzY7{&Y=#u2tauZDJkw%<XXIJ@A#f4N*-^<X#?1*2h~UbYOvAmXkJ0lFWgd<o%odqitzu>B8Y?>7+iZiTEiv0sFUL2|ATK-dE$7r2iQ0%JD`y)922E7=Z8Q-)xmV)v|plxW-O2!+fNzJw8*0mH&p7oES0DTRyC3-w7KRCC*SNy5{Csg7-wJP}cdkQZ^pAqSvuT1SYcviXhd3F=)2<*39WQrGceR5Ox;fiPem0#+A)1WXy6!4P2$^eWaHWC(TW4<gBdwZK*QN|V+N%MFYCR#n%MAWS~wkuE<C_5tFJa1-76k;W{y%P?5FPdr$yVc8(_$h{+W5B%q(CwT$6%?*8<tmlu^pCzPikj-GI8Cno1G1Oa00Q%!pA0`{IJ+(*3;?WBW;XZYpI+wBJgY8SY1{#z#G!O~@?Cr6!kQ8;Jm?Q&2C^;l37<IB@qYLs4+om~*4xlK2k(y`$VkM3c(FRz#gS5(}tg$PiD6t~nOH*$vWC6+3Ny<G~4X@6QU(7@;p=_87=W9sE*67?JF~!8JNXtwT^1uW<RV-;_kn!dLMjk(g%nioNYPv!byAT!*l5(_yD2BnGxlf`?K?HvA7-V2&Ryhm7)fN)h=Vy>6%yY9!1OH}t)X17lRy9xxbZdDTxmG|RDUIYxKSw|XNF6X0TnvI;+il$?NDB@~MuLHV^Axm0Z;h{#Gfd{===1jIxP+vjmF0t~Vp0cBhn|=oSwm_$94P@0;4sY^T9}!Y&ly46Ex5z?*f%0*^w737vhjUtH{l$DI~3y*^z;y+$A?Y0>4@N_1ZNX}g!#Tj@4eu<;?K4w#Gg~rGqfrM2e1ivHkp3sW!!}q`U{JkdVWyA_6Hmo_pw8~Yz;IC4rw_?b*_^f75BbG-4L|EOkwzOY2{fENkiT%i2?)-4=pr_n##7MvK3UOC6(G8lvK72D$~Q7ijTa2nt|hZt{ai`mKwKpBSa}LTA~Z~k&ch70puP&kb&WFTxTbwfbT$egp2@6yr4%aDXF>&pr};<2U>_?0G{M@a<70_SZNrAre(D8?3uvBiElf2hcJ&)9H>EZVQarJ2Ol||&>Rkj-KE%v_OTd~`z!7~1wO@m)LIep0%`0J7!q9<jO{A}yi*WS06NZ7X+j+wlByaCL45AXr#`ZVKoWepXli(8_?C_r_pz%qE+W6o1<?P}^GNZ!<b)|-v*;;QQ@B@}2tnzzo!aRf$fYXKv?JREov!WxmPWY2WWr?Pd31}DvuSd~=8a`pqVpDG7>&}!XoGh0Pz$Fo_ySf6*mceHa)E#s5IAfNCldoiKe+sSJTNR-d(rW8QElH=Vf^G``XqcHC38or=!CCGVi+Mi5;<Zw0l2*tV9Pj+0bKylPOyAP0543|p4cRcB|-I|Z`@CtQt(AuHjPb<*0Rpe%5;VpGT3j-!E}!3vfn^w+gY3ldyqaQKu*jn;!jcvrkJpWxjwkRA&CwD8)8-c)O#w?u()91LnmrAfJNdH44GID3g;vTSY4g?GGP&DqH}th><@&U50*vx$OlF(c#FVYEZoEyXp$Jox~E!(uGBTG&t8#bffpTvtaKEZVZ2JGTyo^u%^rBZT<bmS&D3nhR939D5EwTgQ^ouOH*a3F;`*Ty1cX2^iMws=>7HwF47F;YMh5^*lh$qxoprM)gMMx@Yyp9%tQ;F=6eIMfl0)GbOaCf9F>3_BGl5YnD93n(sO>bI?bxZtKx&ib7L_DmVTK<0x(?xUYt-~>%cDgwS*bzNE5V0QALJ53$Becyg3<XL5@*WcAvO%r$RTYQy@9s$VQt#Z4%)*R(uO3%X(~^!ioEczC{J5Cgfj7@)(v|$RFx@>S1BgVa{&emarnOK#b7eRm8igAS}nzzj%)E`N$`MyU?X;?iN3Gv6)Hx<iGxuL=6^V$t%cLZ-BZ+}iwZ$`h=^=_sJ*7dz;#7QVP6UGlPWEMk3-ZqWI=mf%XVr3mJ6Fofa#*pqG@xbw;=A#Us>sX7fJ*Lmr?BVmL`Zyu2uy{(FAA_yKkB8Re~bhR1MsjH58<w53p-21&=uu5v6rIoW8JP3KlL`g*B~5qS>?;<4qI8{y&NhnSc%^H|jdVR<Kt8i52cN-w;1HH14e_xVzB>8}Dd1gZ&DED+9RtkBZ9R7l<kF3bybHSU>Ipw>*kH>A{r#q=RdBn?}v1o~;Urwz&<V*{M|~k(q;UuqNud2^EnW215jcdKZ8?%0tMbvX+>^|L<2jqOJ0dqO9A?_tr!yFA(*6$O~Gw=NM)SJT7uv=(#us=wKXnF+_%;$g*L`ve@ufELqf3a2F`wwmnv5c1@;Qx;xPN<yukyv9egS(JPHxLN={?+^}xjc{S5$29$}@vZiiKnb-}0N`Gd}&|*)UsRw$OQaGwtQKr<uA6m1SQEeDIsZJ$bMP=VcN~R?LQ4*rP;!R}i(E2=tT&`ciJ%Y6lcln8?3fr@m0=L}2xS`2!3MF)!fVHt|(Wf1E;NogIs7nM1v3=Zz*wWcv4PlRJRV#36bKJ>_lEAdPofde;TRcj~?^SBFU$eU>Mm2W<*RIIjz6xCXsy9)7_X_15UW-m1TTTn3f+AFqorBxcw|cQ;ouUoE61ybkZqXI;SFzZ?P}%f8fE-n#v1J-(*}aFE1|5axu{^v_vz*=WC2Xg-bS^<AE8wE&DPrZElvl4-xGq_bF@TnCifSK<&l(wxI)*+tV;A49&rVL+_r>+~>E*>0Y(b&%<lDu?>B%)a`*^yLO~*gZK!!ihz^$HLT%TTC4-6T`r9i~Vy_@sr+y&-hJQvvrjS8sd(cQ&&>LjKt6e<2+Q)>K;D4~4ZR#k0z^P_pI0c9oRo5e-Cls7!?IIJBnZ#z&if=bI(Rhee8@v?{JM*SS*K@*a@^s<BmfNsA>s0c~FA$4HBLx*G<ibsueHdtKzes;}{zbr04{#^W*WDPsXEua>3v-t6}lU^A0W>Sud=#tJmHW_KnSy;%lQitxwRe`IR3pSWaz>D&Eb&{yGW8UFRCZ>`>FV}H8A8a<tVK5j^{2<G9s`<(GCKcn)@?MHS;a)Vg_*YIg+cOxwGy}QNX!ybMfk&$Ht-@`x&R7=WaaOp+(-Q1$>mk~x7esW^W@B{}vU=~U#(edj#hYFlJjsSkOjZyxQLC%S^wbeiRFjD{tWCI&f-nWOm^bJ>-%vau4hou!2$?)K!mB^!`4f2sIz{3hL~%MMggDAKB#xAOKHeyj^qxSu*Lc2`3!jP(6-$_=sC}ALj4N+YVFkGKq9|rre0{?6CcRzaWFK%pY__VihS@5>N&$PDxS$GQE$Mc-v?)UMtE$KfDhBNZ1cQ6BO~`NUh4G)%0K4t;E3JLCZmY1^t>4z#U+YlSRPkAvgQ%9{tvGp3PdCwa9p>(G^rjLkq|+}?-ujL}jau$>bhEQoFOS8k1}P7k@xldGmFiC_Jyf4kTje*V$vwx^N}^a+I0I#mBWfOvVbM*am=!!x-0Hzo`Rl<GrIH>zbs}B7a%a{>Y)!eul$N+)dFnl4UWu3YmYA~DxeFcp3JuIK*$Ke%v)oH_1g2D;@n>%d{!qF)B85kxBEvaQQkq{e+Z9G9MtP}f=e$z2v)^|rIsH|yW-Vvr^z7<~t!>%3F24#+%U#baN%xy7Lvn+^3;C4_k+MG<&Dyn%=9`*u%4Gq6g=ZdOQed{s?o{}s_6U%hjrWX)8G;mm!`7E=fFFfQ+4~NAZ%u|NJ6>}fQswEethhktW-1=1;Su{YP|1mmDvDo_4skb0iPX$*>8_D3FE3y~@5yT`Vm*Bo^|$B4@~X^HeIrU{#hnwyYy%z;wVODzKoKED)%C_jQKR&zmpt<}37V^QOt*U%moh;No;lq^P{KS>-gVe0<=>ZAyq$;h#l^}0e!DVW%S2Fs&A}>>{{Ig~E8>=7RmOZhii*G_o#cP86tz{hS(HJwVpKZd-#NH6OsCoxcp!t|cb<%tc!36QX$O(qapJC2B%c(LEqN2Aij~Ubl|)H2zmzVC?5LAJ87=zN=Bh`8Z7%A=<5HZBJJfyRL{XkzUB7gET8|>2))3uzhGC^~PYv9bkaSq!O(k(L1FyU|SaT6Jb8}=e_&>ZAcN^@9)9$iG*YMEkbU7l3Q8Mf{1k@+`Qr`9qZ!$RJae0>kQgLw8#6ODuF4Jp<_dC>;N_HAQ)q#`L^Qdw5fc<-o3*{&hwZOTIVW_AkB9*;W=Oo_%UW`X8y4Hb~djrHxiGSOGCgWD1@q0HkXm<hgQ{YQ+G;o@xQ~vvff#UG=5pTtTls1r<z~&8qIza0{I~CfDpkmQZMtq7rTE@dip0x;iDeU`l*f3J=3rS9t2PubLAN_2g`dNkgV~f_U;pY55(4mF+`A0*HztPES_f|1ZKZpvhwdpp|Kg@UF`#j2md`qfM2i6$2@hr=1QJ_>}+&r#s-a+ppIh<7_@updO`S3Q8GcmN*O=}Xn+o*(<MEB?vlWNe?j*S<QF*C7EVnM>2O&Fs!y0};)4R@y=zFolLYQ|igvLl}AUK=_~24B{)!MC<V4XD7|jg5f#GQ1`6No{F#IkL;y%?_5*`v(}7RBS=T9`B}tNnAe_r^V(=qQT1j8}#ZgNU}kzr-W4H>e9nWHz=dew&x5{>d;L?mwFC0smxSg*Y5$S?(g&-LCPeycIb_4Rj)3iw=US5SQ<}?T)A$qT!yHwe)nJ2?-G^A9clS1liNC~P@~&AXjXn+qyz`Cy_&1LE*1NLDQIdn?&b6ycmDl#huSj;&dcptBh!DCe&sJpPa!00CE)vE%eQ#|De2-PlfRvyA0W8#gZyDc%>h`0mBALP);vK>seeMR3koeL)%#20+@-xvHkZWgBSqo-Lj2%mPFkYd!{HDm`u$2#UcA0NAJ*S-k_Q{evs#1sL6*ds7tWo!jWjfyzn?ZMKJ=42*GpHKPD)n(3eUPg4ij%#sT?$-@m2tfbX9CXX5XntHxw|-^L?aA{rX^kzf{P9$tYD88lLih6`-KLBIO<ULddUTS3hJRBI?v&w%~7EmuliJ9y$(O7weU-I}j5rhePvdU<$&*SW6hIoRC@LS%OJJ`#+3b0;T')).decode(), __file__, "exec"))
+"""Render seamless light and dark ASCII profile films.
+
+The motion is designed as a normal high-contrast video first. Typography is
+embedded into those source frames and the complete frame is then converted to
+ASCII, keeping the words part of the same visual system.
+"""
+
+from __future__ import annotations
+
+import argparse
+import importlib.util
+import math
+from pathlib import Path
+
+import numpy as np
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
+
+WIDTH, HEIGHT = 960, 360
+SOURCE_WIDTH, SOURCE_HEIGHT = 320, 120
+COLUMNS, ROWS = 96, 36
+CELL_WIDTH, CELL_HEIGHT = WIDTH // COLUMNS, HEIGHT // ROWS
+FPS = 8
+FRAME_COUNT = 72
+
+GITHUB_LIGHT = (246, 248, 250)
+GITHUB_DARK = (13, 17, 23)
+LIGHT_INK = (31, 35, 40)
+DARK_INK = (240, 246, 252)
+LIGHT_MUTED = (87, 96, 106)
+DARK_MUTED = (139, 148, 158)
+
+
+def load_font(size: int, *, mono: bool = False, bold: bool = False):
+    names = []
+    if mono and bold:
+        names = ["DejaVuSansMono-Bold.ttf", "LiberationMono-Bold.ttf"]
+    elif mono:
+        names = ["DejaVuSansMono.ttf", "LiberationMono-Regular.ttf"]
+    elif bold:
+        names = ["DejaVuSans-Bold.ttf", "LiberationSans-Bold.ttf"]
+    else:
+        names = ["DejaVuSans.ttf", "LiberationSans-Regular.ttf"]
+
+    roots = [
+        Path("/usr/share/fonts/truetype/dejavu"),
+        Path("/usr/share/fonts/truetype/liberation2"),
+    ]
+    for root in roots:
+        for name in names:
+            path = root / name
+            if path.exists():
+                return ImageFont.truetype(path, size)
+    return ImageFont.load_default()
+
+
+ASCII_FONT = load_font(CELL_HEIGHT + 1, mono=True, bold=True)
+PHRASE_FONT = load_font(21, bold=True)
+SMALL_FONT = load_font(10, mono=True)
+FALLBACK_PALETTE = list(" .,:;irsXA253hMHGS#9B&@")
+
+
+def load_asciline_palette(directory: Path) -> list[str]:
+    module_path = directory / "ascii_video_player2.py"
+    if not module_path.exists():
+        return FALLBACK_PALETTE
+    spec = importlib.util.spec_from_file_location("asciline_mapper", module_path)
+    if spec is None or spec.loader is None:
+        return FALLBACK_PALETTE
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    values = [str(character) for character in module.AsciiMapper()._lut]
+    return values or FALLBACK_PALETTE
+
+
+def smooth(value: float) -> float:
+    value = max(0.0, min(1.0, value))
+    return value * value * (3.0 - 2.0 * value)
+
+
+def cyclic_weights(theta: float) -> list[float]:
+    centers = [0.0, math.tau / 3.0, 2.0 * math.tau / 3.0]
+    raw = [((math.cos(theta - center) + 1.0) / 2.0) ** 4 for center in centers]
+    total = sum(raw)
+    return [value / total for value in raw]
+
+
+def amoeba_field(theta: float) -> np.ndarray:
+    yy, xx = np.mgrid[0:SOURCE_HEIGHT, 0:SOURCE_WIDTH]
+    field = np.zeros((SOURCE_HEIGHT, SOURCE_WIDTH), dtype=np.float32)
+
+    blobs = [
+        (0.21, 0.26, 58, 37, 0.0),
+        (0.63, 0.28, 73, 42, 1.7),
+        (0.80, 0.72, 60, 36, 3.1),
+        (0.34, 0.78, 76, 43, 4.4),
+    ]
+    for cx, cy, rx, ry, phase in blobs:
+        moving_x = SOURCE_WIDTH * cx + math.cos(theta + phase) * 36
+        moving_y = SOURCE_HEIGHT * cy + math.sin(theta * 1.15 + phase) * 20
+        distance = ((xx - moving_x) / rx) ** 2 + ((yy - moving_y) / ry) ** 2
+        field += np.exp(-distance * 2.1)
+
+    ripple = 0.15 * np.sin(xx / 22.0 + theta) + 0.11 * np.cos(yy / 15.0 - theta * 1.3)
+    return field + ripple
+
+
+def source_frame(theta: float, theme: str) -> Image.Image:
+    light_theme = theme == "light"
+    background = GITHUB_LIGHT if light_theme else GITHUB_DARK
+    foreground = LIGHT_INK if light_theme else DARK_INK
+    muted = LIGHT_MUTED if light_theme else DARK_MUTED
+
+    field = amoeba_field(theta)
+    threshold = 0.74 + 0.24 * math.sin(theta * 0.7)
+    coverage = np.clip((field - threshold + 0.24) / 0.48, 0.0, 1.0)
+    coverage = coverage * coverage * (3.0 - 2.0 * coverage)
+
+    bg = np.array(background, dtype=np.float32)
+    fg = np.array(foreground, dtype=np.float32)
+    if light_theme:
+        shape = fg * 0.90
+    else:
+        shape = fg * 0.82
+
+    pixels = bg[None, None, :] * (1.0 - coverage[..., None]) + shape[None, None, :] * coverage[..., None]
+    image = Image.fromarray(np.uint8(np.clip(pixels, 0, 255)), "RGB").convert("RGBA")
+
+    # A continuous filament connects the phases and returns to itself.
+    filament = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    draw = ImageDraw.Draw(filament)
+    points = []
+    for index in range(180):
+        progress = index / 179.0
+        angle = progress * math.tau * 1.6 + theta
+        radius = 14 + progress * 118
+        x = SOURCE_WIDTH / 2 + math.cos(angle + progress * 0.8) * radius * 0.92
+        y = SOURCE_HEIGHT / 2 + math.sin(angle + progress * 0.8) * radius * 0.36
+        points.append((x, y))
+    line_color = muted + (110,)
+    draw.line(points, fill=line_color, width=1, joint="curve")
+    image.alpha_composite(filament.filter(ImageFilter.GaussianBlur(3)))
+    image.alpha_composite(filament)
+
+    phrases = ["I notice patterns.", "I connect ideas.", "I shape systems."]
+    weights = cyclic_weights(theta)
+    phrase_index = max(range(3), key=lambda index: weights[index])
+    phrase = phrases[phrase_index]
+    alpha = int(155 + 100 * weights[phrase_index])
+
+    # Establish a quiet contrast zone, then draw the words into the source video.
+    # ASCILINE converts this entire frame, so these are not overlay labels.
+    text_layer = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    text_draw = ImageDraw.Draw(text_layer)
+    bbox = text_draw.textbbox((0, 0), phrase, font=PHRASE_FONT)
+    text_width = bbox[2] - bbox[0]
+    text_height = bbox[3] - bbox[1]
+    text_x = (SOURCE_WIDTH - text_width) / 2
+    text_y = (SOURCE_HEIGHT - text_height) / 2 - 4
+
+    sample_x = int(SOURCE_WIDTH / 2)
+    sample_y = int(SOURCE_HEIGHT / 2)
+    local_shape = coverage[sample_y, sample_x] > 0.5
+    if light_theme:
+        text_color = background if local_shape else foreground
+        halo_color = foreground if local_shape else background
+    else:
+        text_color = background if local_shape else foreground
+        halo_color = foreground if local_shape else background
+
+    halo = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    halo_draw = ImageDraw.Draw(halo)
+    pad_x, pad_y = 13, 8
+    halo_draw.rounded_rectangle(
+        (text_x - pad_x, text_y - pad_y, text_x + text_width + pad_x, text_y + text_height + pad_y),
+        radius=11,
+        fill=halo_color + (82,),
+    )
+    image.alpha_composite(halo.filter(ImageFilter.GaussianBlur(9)))
+
+    text_draw.text((text_x, text_y), phrase, font=PHRASE_FONT, fill=text_color + (alpha,))
+    image.alpha_composite(text_layer)
+
+    # Small cyclic marker reinforces the endless flow without adding more copy.
+    marker = f"{phrase_index + 1:02d} / 03"
+    marker_draw = ImageDraw.Draw(image)
+    marker_draw.text((14, SOURCE_HEIGHT - 18), marker, font=SMALL_FONT, fill=muted + (170,))
+
+    return image.convert("RGB")
+
+
+def render_ascii(source: Image.Image, palette: list[str], theme: str) -> Image.Image:
+    light_theme = theme == "light"
+    background = GITHUB_LIGHT if light_theme else GITHUB_DARK
+    default_ink = LIGHT_INK if light_theme else DARK_INK
+
+    small = source.resize((COLUMNS, ROWS), Image.Resampling.BILINEAR)
+    pixels = np.asarray(small, dtype=np.float32)
+    bg = np.array(background, dtype=np.float32)
+    distance = np.linalg.norm(pixels - bg[None, None, :], axis=2)
+
+    canvas = Image.new("RGB", (WIDTH, HEIGHT), background)
+    draw = ImageDraw.Draw(canvas)
+    highest = len(palette) - 1
+
+    for row in range(ROWS):
+        y = row * CELL_HEIGHT - 1
+        for column in range(COLUMNS):
+            strength = float(distance[row, column])
+            if strength < 7.0:
+                continue
+            palette_index = int((min(strength, 255.0) / 255.0) ** 0.62 * highest)
+            palette_index = max(1, min(highest, palette_index))
+
+            rgb = pixels[row, column]
+            luminance = 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]
+            if light_theme:
+                shade = max(24, min(110, int(luminance * 0.45)))
+            else:
+                shade = max(165, min(248, int(luminance + 75)))
+            color = (shade, shade, shade)
+            if strength > 170:
+                color = default_ink
+
+            draw.text(
+                (column * CELL_WIDTH, y),
+                palette[palette_index],
+                font=ASCII_FONT,
+                fill=color,
+            )
+    return canvas
+
+
+def render_theme(palette: list[str], theme: str, output: Path) -> None:
+    frames = []
+    for frame_index in range(FRAME_COUNT):
+        theta = math.tau * frame_index / FRAME_COUNT
+        frames.append(render_ascii(source_frame(theta, theme), palette, theme))
+
+    output.parent.mkdir(parents=True, exist_ok=True)
+    frames[0].save(
+        output,
+        save_all=True,
+        append_images=frames[1:],
+        duration=round(1000 / FPS),
+        loop=0,
+        optimize=True,
+        disposal=2,
+        colors=96,
+    )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--asciline", type=Path, required=True)
+    parser.add_argument("--light-output", type=Path)
+    parser.add_argument("--dark-output", type=Path)
+    parser.add_argument("--output", type=Path)
+    args = parser.parse_args()
+
+    palette = load_asciline_palette(args.asciline)
+    light_output = args.light_output or args.output
+    if light_output is None:
+        parser.error("--light-output or --output is required")
+    dark_output = args.dark_output or light_output.with_name("ankit-cinematic-ascii-dark.gif")
+
+    render_theme(palette, "light", light_output)
+    render_theme(palette, "dark", dark_output)
+
+
+if __name__ == "__main__":
+    main()

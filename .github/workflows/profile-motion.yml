@@ -3,7 +3,8 @@ name: Render profile motion
 on:
   push:
     branches:
-      - profile-cinematic-showcase-v5
+      - main
+      - profile-motion-replacement-v6
     paths:
       - tools/generate_profile_motion.py
       - .github/workflows/profile-motion.yml
@@ -28,7 +29,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install rendering dependencies
-        run: pip install pillow numpy opencv-python-headless
+        run: pip install pillow numpy
 
       - name: Fetch ASCILINE
         run: git clone --depth 1 https://github.com/YusufB5/ASCILINE.git .asciline
@@ -47,6 +48,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Animation is already current."
           else
-            git commit -m "Render cinematic profile animation [skip ci]"
+            git commit -m "Render personal cinematic profile animation [skip ci]"
             git push
           fi

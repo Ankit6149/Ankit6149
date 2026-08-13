@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1160" height="398" viewBox="0 0 1160 398" role="img" aria-labelledby="title desc">
 <title id="title">LeetCode profile for ankit_bh_</title>
-<desc id="desc">823 solved problems, ranking 60,178, with difficulty and language breakdown.</desc>
+<desc id="desc">824 solved problems, ranking 60,256, with difficulty and language breakdown.</desc>
 <style>
   .title { font: 600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
   .name { font: 600 26px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
@@ -16,12 +16,12 @@
 <text x="52" y="122" class="body" fill="#8b949e">Problem solving profile</text>
 
 <circle cx="156" cy="235" r="65" fill="none" stroke="#30363d" stroke-width="9"/>
-<circle cx="156" cy="235" r="65" fill="none" stroke="#2f9e8f" stroke-width="9" stroke-linecap="round" stroke-dasharray="336.1 408.4" transform="rotate(-90 156 235)"/>
-<text x="156" y="229" text-anchor="middle" class="metric" fill="#f0f6fc">823</text>
+<circle cx="156" cy="235" r="65" fill="none" stroke="#2f9e8f" stroke-width="9" stroke-linecap="round" stroke-dasharray="336.5 408.4" transform="rotate(-90 156 235)"/>
+<text x="156" y="229" text-anchor="middle" class="metric" fill="#f0f6fc">824</text>
 <text x="156" y="257" text-anchor="middle" class="label" fill="#8b949e">TOTAL SOLVED</text>
 
 <text x="286" y="196" class="label" fill="#8b949e">RANKING</text>
-<text x="286" y="232" class="metric" fill="#f0f6fc">60,178</text>
+<text x="286" y="232" class="metric" fill="#f0f6fc">60,256</text>
 <text x="286" y="282" class="label" fill="#8b949e">PRIMARY LANGUAGE</text>
 <text x="286" y="318" class="metric" fill="#f0f6fc">C++</text>
 
@@ -30,19 +30,19 @@
 
 <text x="604" y="130" class="label" fill="#8b949e">EASY</text>
 <rect x="604" y="144" width="246" height="10" rx="5" fill="#30363d"/>
-<rect x="604" y="144" width="183.6" height="10" rx="5" fill="#2f9e8f"/>
+<rect x="604" y="144" width="183.2" height="10" rx="5" fill="#2f9e8f"/>
 <text x="876" y="154" class="body" fill="#f0f6fc">318</text>
 
 <text x="604" y="183" class="label" fill="#8b949e">MEDIUM</text>
 <rect x="604" y="197" width="246" height="10" rx="5" fill="#30363d"/>
 <rect x="604" y="197" width="246.0" height="10" rx="5" fill="#bf8700"/>
-<text x="876" y="207" class="body" fill="#f0f6fc">426</text>
+<text x="876" y="207" class="body" fill="#f0f6fc">427</text>
 
 <text x="604" y="236" class="label" fill="#8b949e">HARD</text>
 <rect x="604" y="250" width="246" height="10" rx="5" fill="#30363d"/>
-<rect x="604" y="250" width="45.6" height="10" rx="5" fill="#6e8ec6"/>
+<rect x="604" y="250" width="45.5" height="10" rx="5" fill="#6e8ec6"/>
 <text x="876" y="260" class="body" fill="#f0f6fc">79</text>
 
 <text x="604" y="294" class="label" fill="#8b949e">LANGUAGES USED</text>
-<rect x="632.0" y="304.0" width="78.5" height="28" rx="14" fill="#161b22" stroke="#30363d"/><text x="671.2" y="323.0" text-anchor="middle" class="mono" fill="#f0f6fc">C++ 733</text><rect x="720.5" y="304.0" width="86.0" height="28" rx="14" fill="#161b22" stroke="#30363d"/><text x="763.5" y="323.0" text-anchor="middle" class="mono" fill="#f0f6fc">MySQL 47</text><rect x="816.5" y="304.0" width="123.5" height="28" rx="14" fill="#161b22" stroke="#30363d"/><text x="878.2" y="323.0" text-anchor="middle" class="mono" fill="#f0f6fc">JavaScript 30</text><rect x="950.0" y="304.0" width="93.5" height="28" rx="14" fill="#161b22" stroke="#30363d"/><text x="996.8" y="323.0" text-anchor="middle" class="mono" fill="#f0f6fc">Pandas 15</text>
+<rect x="632.0" y="304.0" width="78.5" height="28" rx="14" fill="#161b22" stroke="#30363d"/><text x="671.2" y="323.0" text-anchor="middle" class="mono" fill="#f0f6fc">C++ 734</text><rect x="720.5" y="304.0" width="86.0" height="28" rx="14" fill="#161b22" stroke="#30363d"/><text x="763.5" y="323.0" text-anchor="middle" class="mono" fill="#f0f6fc">MySQL 47</text><rect x="816.5" y="304.0" width="123.5" height="28" rx="14" fill="#161b22" stroke="#30363d"/><text x="878.2" y="323.0" text-anchor="middle" class="mono" fill="#f0f6fc">JavaScript 30</text><rect x="950.0" y="304.0" width="93.5" height="28" rx="14" fill="#161b22" stroke="#30363d"/><text x="996.8" y="323.0" text-anchor="middle" class="mono" fill="#f0f6fc">Pandas 15</text>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1160" height="398" viewBox="0 0 1160 398" role="img" aria-labelledby="title desc">
 <title id="title">LeetCode profile for ankit_bh_</title>
-<desc id="desc">840 solved problems, ranking 58,026, with difficulty and language breakdown.</desc>
+<desc id="desc">840 solved problems, ranking 57,858, with difficulty and language breakdown.</desc>
 <style>
   .title { font: 600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
   .name { font: 600 26px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
@@ -21,7 +21,7 @@
 <text x="156" y="257" text-anchor="middle" class="label" fill="#57606a">TOTAL SOLVED</text>
 
 <text x="286" y="196" class="label" fill="#57606a">RANKING</text>
-<text x="286" y="232" class="metric" fill="#24292f">58,026</text>
+<text x="286" y="232" class="metric" fill="#24292f">57,858</text>
 <text x="286" y="282" class="label" fill="#57606a">PRIMARY LANGUAGE</text>
 <text x="286" y="318" class="metric" fill="#24292f">C++</text>
 

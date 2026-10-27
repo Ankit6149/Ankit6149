@@ -6,11 +6,13 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://github.com/Ankit6149/portfolio"><img src="https://img.shields.io/badge/Portfolio-181717?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://leetcode.com/u/ankit_bh_/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=111111" alt="LeetCode" /></a>
-  <a href="https://orcid.org/0009-0005-3408-0058"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID" /></a>
-  <a href="mailto:ankitbhardwaj80100@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" /></a>
+  <a href="https://medium.com/@ankitbhardwaj80100"><img src="https://img.shields.io/badge/Medium-111111?style=flat-square&logo=medium&logoColor=white" alt="Read on Medium" /></a>
+  <a href="https://www.instagram.com/ankit.bh_/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram profile" /></a>
+  <a href="https://leetcode.com/u/ankit_bh_/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=111111" alt="LeetCode profile" /></a>
+  <a href="https://orcid.org/0009-0005-3408-0058"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="Research ORCID profile" /></a>
+  <a href="https://github.com/Ankit6149/portfolio"><img src="https://img.shields.io/badge/Portfolio%20Repo-181717?style=flat-square&logo=github&logoColor=white" alt="Portfolio source repository" /></a>
+  <a href="mailto:ankitbhardwaj80100@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email me" /></a>
 </p>
 
 ---
@@ -57,3 +59,11 @@ Today, I work across full-stack platforms, third-party integrations, workflow au
 <p align="center">
   <em>Sketching, painting, visual design, basketball, and singing keep me connected to rhythm, movement, composition, and expression.</em>
 </p>
+
+---
+
+## Let's connect
+
+I enjoy exchanging ideas with developers, researchers, designers, and people building thoughtful products. If you're working on something interesting, want to discuss engineering or research, or see an opportunity to collaborate, feel free to reach out.
+
+**[LinkedIn](https://www.linkedin.com/in/ankit-bhardwaj-6b9b62221/)** · **[Medium](https://medium.com/@ankitbhardwaj80100)** · **[Instagram](https://www.instagram.com/ankit.bh_/)** · **[LeetCode](https://leetcode.com/u/ankit_bh_/)** · **[ORCID](https://orcid.org/0009-0005-3408-0058)** · **[Email](mailto:ankitbhardwaj80100@gmail.com)**
